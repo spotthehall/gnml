@@ -1,15 +1,14 @@
 {{ define "main" }}
 <main>
+    
     <article>
     {{ if .Title }}
         <h2 class="post-title">{{ .Title }}</h2>
+    {{ end }}
 	    <p class="post-date">{{ .Date.Format "Monday, January 2, 2006" }}</p>
 	    {{ .Content }}
-	{{ else }}
-		<p class="post-date" style="margin-bottom:-10px;">{{ .Date.Format "Monday, January 2, 2006" }}</p>
-	    {{ .Content }}
-    {{ end }}
     </article>
+    
     {{ if or (templates.Exists "partials/reply-by-email.html") (templates.Exists "partials/conversation-link.html") (templates.Exists "partials/tinylytics.html") }}
     <ul class="reply-buttons">
         {{ if and (templates.Exists "partials/tinylytics.html") (.Site.Params.show_kudos) (ne (.Site.Params.site_id | default "") "") }}
@@ -29,9 +28,11 @@
         {{ end }}
     </ul>
     {{ end }}
+    
     {{ if .Site.Params.include_conversation }}
     <script type="text/javascript" src="https://micro.blog/conversation.js?url={{ .Permalink }}"></script>
     {{ end }}
+    
     {{ if or .NextInSection .PrevInSection }}
     <nav class="main-nav">
         <ul>
@@ -48,5 +49,6 @@
         </ul>
     </nav>
     {{ end }}
+    
 </main>
 {{ end }}
