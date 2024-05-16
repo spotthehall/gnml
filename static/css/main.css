@@ -1,15 +1,15 @@
 :root {
+    --sans-serif-font: -apple-system, system-ui, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    --serif-font: -apple-system-ui-serif, ui-serif, 'Georgia', serif;
+    --mono-space-font: ui-monospace, SFMono-Regular, ui-monospace, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+    --font-weight-normal: 400;
+    --font-weight-bold: 700;
     --background: #fff;
     --text: #3b4143;
     --link: #2196f3;
     --accent-1: #f8f8f8;
     --accent-2: #dfe0e0;
     --accent-3: #626768;
-    --sans-serif-font: -apple-system, system-ui, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    --serif-font: -apple-system-ui-serif, ui-serif, 'Georgia', serif;
-    --mono-space-font: ui-monospace, SFMono-Regular, ui-monospace, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
-    --font-weight-normal: 400;
-    --font-weight-bold: 600;
 }
 @media (prefers-color-scheme: dark) {
     :root {
@@ -82,7 +82,6 @@ hr {
 blockquote {
     border-left: 1px solid var(--accent-3);
     color: var(--accent-3);
-    font-family: var(--serif-font);
     margin: 2rem 0;
     padding: 0 2rem;
     font-style: italic;
