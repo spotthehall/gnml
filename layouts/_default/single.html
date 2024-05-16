@@ -1,0 +1,13 @@
+{{ define "main" }}
+<main>
+  <article>
+    {{ if .Title }}
+    <h2 class="page-title">{{ .Title }}</h2>
+    {{ end }}
+    {{ .Content }}
+    <p class="post-date" style="margin-top:4rem;">
+      <em>Last updated {{ .Lastmod | time.Format "Monday, January 2, 2006" }}.</em>
+    </p>
+  </article>
+</main>
+{{ end }}
