@@ -1,3 +1,3 @@
-# wane
+# nominal
 
-a minimal developer Micro.blog theme.
+a minimalist Micro.blog theme. This is a work in progress, so no special features yet...

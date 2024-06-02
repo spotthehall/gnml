@@ -11,9 +11,9 @@
             <p class="post-date">{{ .Date.Format "Monday, January 2, 2006" }}</p>
             {{ .Content }}
             {{ else }}
-            {{ .Content }}
-            <p class="post-date"><a href="{{ .Permalink }}">{{ .Date.Format "Monday, January 2, 2006" }} →</a></p>
-			{{ end }}
+            <p class="post-date" style="margin-bottom:-10px;"><a href="{{ .Permalink }}">{{ .Date.Format "Monday, January 2, 2006" }}</a></p>
+			{{ .Content }}
+            {{ end }}
 		</article>
 		{{ end }}
     {{ else }}
@@ -25,9 +25,9 @@
             <p class="post-date">{{ .Date.Format "Monday, January 2, 2006" }}</p>
             {{ .Content }}
             {{ else }}
-            {{ .Content }}
-            <p class="post-date"><a href="{{ .Permalink }}">{{ .Date.Format "Monday, January 2, 2006" }} →</a></p>
-			{{ end }}
+            <p class="post-date" style="margin-bottom:-10px;"><a href="{{ .Permalink }}">{{ .Date.Format "Monday, January 2, 2006" }}</a></p>
+			{{ .Content }}
+            {{ end }}
 		</article>
 		{{ end }}
     {{ end }}
