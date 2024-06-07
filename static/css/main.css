@@ -214,9 +214,10 @@ article ol li {
     gap: 10px;
 }
 .photo-grid-container a {
-    flex-basis: 33%;
+    flex-basis: 32%;
 }
 .photo-grid-item {
+    margin: 0;
 }
 
 .tinylytics_kudos {
