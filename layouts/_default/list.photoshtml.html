@@ -1,6 +1,6 @@
 {{ define "main" }}
 	<article>
-		<div class="photos-grid-container">
+		<div class="photo-grid-container">
 	
 		{{- $category := index .Site.Taxonomies.categories (lower "Photos") -}}
 		{{- $list := $category.Pages -}}
