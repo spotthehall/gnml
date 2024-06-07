@@ -2,17 +2,16 @@
 <main>
     
     <article>
-    {{ if .Title }}
+        {{ if .Title }}
         <h2 class="post-title">{{ .Title }}</h2>
-    {{ end }}
+        {{ end }}
 	    <p class="post-date">{{ .Date.Format "Monday, January 2, 2006" }}</p>
         {{ with .Params.audio }}<script type="text/javascript" src="https://micro.blog/narration.js?url={{ . }}"></script>{{ end }}
         {{ .Content }}
-    </article>
-    
-    {{ if and (templates.Exists "partials/tinylytics.html") (.Site.Params.show_kudos) (ne (.Site.Params.site_id | default "") "") }}
+        {{ if and (templates.Exists "partials/tinylytics.html") (.Site.Params.show_kudos) (ne (.Site.Params.site_id | default "") "") }}
         <p><button id="al" aria-label="Kudo Button" class="tinylytics_kudos" data-path="{{ .Page.RelPermalink }}"></button></p>
-    {{ end }}
+        {{ end }}
+    </article>
     
     {{ if .Site.Params.include_conversation }}
         <script type="text/javascript" src="https://micro.blog/conversation.js?url={{ .Permalink }}"></script>
