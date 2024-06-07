@@ -213,8 +213,10 @@ article ol li {
     align-content: start;
     gap: 10px;
 }
-.photo-grid-item {
+.phot-grid-container a {
     flex-basis: 33%;
+}
+.photo-grid-item {
 }
 
 .tinylytics_kudos {
