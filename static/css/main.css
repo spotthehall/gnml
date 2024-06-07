@@ -212,7 +212,7 @@ article ol li {
     align-items: start;
     align-content: start;
     gap: 15px 0;
-    margin-top: 3rem;
+    margin-top: 4rem;
 }
 .photo-grid-container a {
     flex-basis: 32%;
@@ -328,6 +328,9 @@ main.archive p > img {
 }
 main.archive p {
     display: inline;
+}
+main.archive .entry {
+    margin: 2rem auto;
 }
 
 .main-nav {
