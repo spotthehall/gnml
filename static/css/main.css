@@ -98,7 +98,7 @@ th {
 }
 code, kbd, pre, tt {
     font-family: var(--mono-space-font);
-    font-size: 1.8rem;
+    font-size: 1.6rem;
 }
 pre {
     background: var(--text);
