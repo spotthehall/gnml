@@ -161,10 +161,11 @@ header a:hover, header a:active {
     color: var(--link);
 }
 .site-nav ul {
-    
+    list-style: none;
 }
 .site-nav li {
-
+    display: inline-block;
+    margin-right: 5px;
 }
 
 article {
