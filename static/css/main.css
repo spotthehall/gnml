@@ -255,7 +255,7 @@ article ol li {
 }
 
 .microblog_conversation {
-    margin: 4rem 0;
+    margin: 5rem 0;
 }
 .microblog_post {
     margin-bottom: 1rem;
@@ -293,11 +293,10 @@ article ol li {
 }
 
 .microblog_reply_form {
-    margin-top: 30px;
+    margin-top: 5rem;
 }
 .microblog_reply_signin {
     font-size: 1.8rem;
-    margin-bottom: -5px;
 }
 .microblog_reply_textarea textarea {
     border: 1px solid var(--accent-3);
