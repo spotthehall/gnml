@@ -13,7 +13,6 @@
         </article>
         {{ end }}
         
-        {{ if or ($paginator.HasNext $paginator.HasPrev) }}
         <nav class="main-nav">
             <ul>
                 <li>
@@ -28,7 +27,6 @@
                 </li> 
             </ul>
         </nav>
-        {{ end }}
         
     </main>
 {{ end }}
