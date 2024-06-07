@@ -9,11 +9,10 @@
 			{{ if .Title }}
 			<h3 class="post-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
             <p class="post-date">{{ .Date.Format "Monday, January 2, 2006" }}</p>
-            {{ .Content }}
             {{ else }}
-            <p class="post-date" style="margin-bottom:-10px;"><a href="{{ .Permalink }}">{{ .Date.Format "Monday, January 2, 2006" }}</a></p>
-			{{ .Content }}
+            <p class="post-date"><a href="{{ .Permalink }}">{{ .Date.Format "Monday, January 2, 2006" }}</a></p>
             {{ end }}
+			{{ .Content }}
 		</article>
 		{{ end }}
     {{ else }}
@@ -23,11 +22,10 @@
 			{{ if .Title }}
 			<h3 class="post-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
             <p class="post-date">{{ .Date.Format "Monday, January 2, 2006" }}</p>
-            {{ .Content }}
             {{ else }}
-            <p class="post-date" style="margin-bottom:-10px;"><a href="{{ .Permalink }}">{{ .Date.Format "Monday, January 2, 2006" }}</a></p>
+            <p class="post-date"><a href="{{ .Permalink }}">{{ .Date.Format "Monday, January 2, 2006" }}</a></p>
+			{{ end }}
 			{{ .Content }}
-            {{ end }}
 		</article>
 		{{ end }}
     {{ end }}

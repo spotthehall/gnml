@@ -9,7 +9,7 @@
     --serif-font: -apple-system-ui-serif, ui-serif, 'Georgia', serif;
     --mono-space-font: ui-monospace, SFMono-Regular, ui-monospace, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
     --font-weight-normal: 400;
-    --font-weight-bold: 600;
+    --font-weight-bold: 700;
 }
 @media (prefers-color-scheme: dark) {
     :root {
@@ -31,7 +31,6 @@
     }
 }
 
-/* === css reset === */
 *, *::before, *::after {
     box-sizing: border-box;
 }
@@ -53,7 +52,6 @@ h1, h2, h3, h4, h5, h6, b, strong {
     isolation: isolate;
 }
 
-/* === start main styles === */
 html {
     font-size: 10px;
 }
@@ -62,10 +60,10 @@ body {
     color: var(--text);
     font-family: var(--sans-serif-font);
     font-size: 1.8rem;
-    line-height: 1.5;
+    line-height: 1.6;
     margin: 0 auto;
-    /* max-width: 100rem; */
     padding: 1rem 2rem;
+    max-width: 74rem;
     -moz-font-feature-settings:    "kern" 1; 
     -ms-font-feature-settings:     "kern" 1; 
     -o-font-feature-settings:      "kern" 1; 
@@ -91,7 +89,6 @@ hr {
 blockquote {
     border-left: 1px solid var(--accent-3);
     color: var(--accent-3);
-    font-family: var(--serif-font);
     margin: 2rem 0;
     padding: 0 2rem;
     font-style: italic;
@@ -111,7 +108,7 @@ th {
 }
 code, kbd, pre, tt {
     font-family: var(--mono-space-font);
-    font-size: 1.5rem;
+    font-size: 1.6rem;
 }
 pre {
     background: var(--text);
@@ -158,19 +155,9 @@ input[type=email] {
     margin: 4px 1px;
     width: 60%;
 }
+
 header {
-    align-items: center;
-    border-bottom: 1px solid var(--accent-2);
-    display: flex;
-    justify-content: space-between;
-    margin: 0 0 5rem 0;
-    padding: .5rem 1rem 1.5rem 1rem;
-}
-header .profile-photo {
-    width: 32px;
-    height: auto;
-    border-radius: 50%;
-    margin-right: .75rem;
+
 }
 header a {
     color: var(--text);
@@ -180,37 +167,27 @@ header a:hover, header a:active {
 }
 .profile-photo {
     flex-grow: 1;
-    min-width: 32px;
+    width: 30px;
+    height: auto;
+    border-radius: 50%;
 }
 .site-title {
-    margin: 0;
-    font-size: 1.5rem;
-    flex-grow: 2;
+
 }
 .site-title a:hover,
 .site-title a:active {
-    text-decoration: none;
+
 }
 .site-nav ul, .footer-nav ul {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    flex-grow: 1;
+
 }
 .site-nav li {
-    margin-left: 2rem;
-    font-size: 1.5rem;
-    justify-content: flex-end;
+
 }
-main,
-footer,
-.photos-grid {
-    margin: 0 auto;
-    max-width: 64rem;
-}
+
 article {
-    margin: 0;
-    padding-bottom: 1.5rem;
+    margin: 0 0 3rem;
+    padding-bottom: 3rem;
 }
 main.archive article {
     padding-bottom: 3.5rem;
@@ -231,6 +208,7 @@ single article {
 article h2, article h3 {
     margin-top: 4rem;
 }
+
 .page-title {
     line-height: 1.2;
     margin-top: 0;
@@ -238,7 +216,6 @@ article h2, article h3 {
 .post-title {
     font-size: 2.4rem;
     line-height: 1.2;
-    margin-bottom: -15px;
     margin-top: 0;
 }
 .post-title a {
@@ -247,16 +224,16 @@ article h2, article h3 {
 .post-title a:hover, .post-title a:active {
     color: var(--link);
 }
+
 .post-date {
     color: var(--accent-3);
-    font-size: 1.5rem;
+    font-size: 1.6rem;
 }
+
 article img {
     width: calc(100% + 80px);
     height: auto;
     border-radius: 6px;
-    /* max-width: calc(100% + 80px);
-    margin: 2rem calc(-4rem); */
     max-width: 100%;
     margin: 2rem auto;
 }
@@ -264,16 +241,18 @@ article ul li,
 article ol li {
     margin-bottom:10px;
 }
+
 .post-tags {
     list-style: none;
     margin: 0 0 2rem 0;
     padding: 0;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
 }
 .post-tags li {
     margin-right: 6px;
     display: inline;
 }
+
 .reply-buttons {
     list-style-type: none;
     padding: 0;
@@ -285,10 +264,14 @@ article ol li {
     line-height: 1.6rem;
     white-space: nowrap;
 }
+.reply-buttons a, .reply-buttons button {
+    transition: all 0.2s ease-in-out;
+}
+
 .main-nav {
     margin: 0;
     padding: 2rem 0;
-    border-top: 1px solid var(--accent-2);
+    /* border-top: 1px solid var(--accent-2); */
 }
 .main-nav ul {
     list-style: none;
@@ -302,9 +285,10 @@ article ol li {
     margin: 0;
     padding: 0;
 }
+
 footer {
     color: var(--accent-3);
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     padding: 0 0 3rem 0;
     text-align: center;
 }
@@ -312,55 +296,14 @@ footer p {
     margin: 0;
 }
 
-@media only screen and (max-width: 570px) {
-    body {
-        line-height: 1.5;
-    }
-    header {
-        display: block;
-        margin-top: 1rem;
-        padding-bottom: 3rem;
-        padding-right: 0;
-        padding-left: 0;
-    }
-    header .profile-photo {
-        width: 48px;
-        height: auto;
-        margin: 0 auto 15px;
-    }
-    .site-title {
-        text-align: center;
-        margin: 0.5rem auto 1.5rem;
-        width: 100%;
-        font-size: 1.8rem;
-    }
-    .site-nav ul {
-        display: flex;
-        justify-content: space-between;
-        text-align: center;
-        padding: 0 20px;
-        width: 100%;
-        font-size: 1.8rem;
-    }
-    .site-nav li {
-        display: inline-block;
-        margin: 0;
-    }
-}
 
-/* === from custom css page - roll into the other styles... === */
-.reply-buttons a, .reply-buttons button {
-    transition: all 0.2s ease-in-out;
-}
-.footnote-button {
-    font-size: 1.4rem;
-}
 .info {
     background-color: var(--accent-1);
     border-left: 3px solid var(--link);
     color: var(--text);
     padding: 16px 24px;
 }
+
 .photos-grid {
     margin-bottom: 4rem;
 }
@@ -372,7 +315,7 @@ footer p {
 }
 .photos-grid--style-masonry .photos-grid__item img {
     margin-bottom: 0;
-    /* border-radius: 6px; */
+    border-radius: 6px;
 }
 .photos-grid--style-masonry .photos-grid__item img:hover {
     opacity: 0.8;
@@ -406,6 +349,7 @@ a.reply-on-mastodon:active,
     background: var(--text);
     color: var(--background);
 }
+
 .tiny_uptime,
 .tiny_counter {
     display: inline-block;
@@ -430,13 +374,14 @@ a.tinylytics_webring {
     line-height: 30px;
 }
 .tinylytics_webring_avatar {
-    border-radius: 50%;
+    border-radius: 6px;
     width: 24px;
     height: auto;
     vertical-align: middle;
     margin-right: 6px;
     background: #fff;
 }
+
 .microblog_conversation {
     margin: 4rem 0;
 }
@@ -455,7 +400,7 @@ a.tinylytics_webring {
 }
 .microblog_fullname {
     font-weight: var(--font-weight-bold);
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     margin-left: 6px;
     display: inline-block;
     line-height: 30px;
@@ -464,7 +409,7 @@ a.tinylytics_webring {
     vertical-align: middle;
     width: 30px;
     height: auto;
-    border-radius: 50%;
+    border-radius: 6px;
     max-width: 30px !important;
     display: inline-block;
 }
@@ -474,28 +419,13 @@ a.tinylytics_webring {
     font-size: 0.9em;
     text-decoration: none;
 }
-.lightbox-btn {
-    border: none;
-}
-.lightbox-image {
-    border-radius: 6px;
-    max-width: 140rem;
-}
-.img-caption {
-    color: var(--accent-3);
-    display: block;
-    font-size: 1.4rem;
-    font-style: italic;
-    margin-top: -1rem;
-    text-align: center;
-}
 
 .microblog_reply_form {
     margin-top: 30px;
 }
 .microblog_reply_signin {
-    font-size: 1.5rem;
-    margin-bottom: -10px;
+    font-size: 1.6rem;
+    margin-bottom: -5px;
 }
 .microblog_reply_textarea textarea {
     border: 1px solid var(--accent-3);
@@ -514,6 +444,24 @@ a.tinylytics_webring {
 }
 .microblog_reply_button {
     text-align: right;
-    font-size: 1.5rem;
-    margin-top: -20px;
+    font-size: 1.6rem;
+    margin-top: -15px;
+}
+
+@media only screen and (max-width: 570px) {
+    header {
+        padding: 2rem 0 2.5rem 0;
+        margin-top: 0;
+    }
+    .site-nav ul {
+        display: flex;
+        justify-content: space-between;
+        text-align: right;
+        padding: 0;
+    }
+    .site-nav li {
+        display: inline-block;
+        margin: 0;
+        margin-left: 15px;
+    }
 }
