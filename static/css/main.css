@@ -283,6 +283,7 @@ article ol li {
     border-radius: 50%;
     max-width: 30px !important;
     display: inline-block;
+    margin-top: -2px;
 }
 .microblog_time a,
 .microblog_time a:visited {
