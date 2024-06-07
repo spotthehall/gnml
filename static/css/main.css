@@ -153,14 +153,8 @@ header a {
 header a:hover, header a:active {
     color: var(--link);
 }
-.profile-photo {
-    flex-grow: 1;
-    width: 80px;
-    height: auto;
-    border-radius: 50%;
-}
 .site-nav ul {
-
+    
 }
 .site-nav li {
 
