@@ -213,7 +213,7 @@ article ol li {
     align-content: start;
     gap: 10px;
 }
-.phot-grid-container a {
+.photo-grid-container a {
     flex-basis: 33%;
 }
 .photo-grid-item {
