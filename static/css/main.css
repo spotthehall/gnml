@@ -154,18 +154,20 @@ input[type=email] {
 header {
 
 }
-header a {
+.site-title a {
     color: var(--text);
+    text-decoration: none;
 }
-header a:hover, header a:active {
+.site-title a:hover, .site-title a:active {
     color: var(--link);
 }
 .site-nav ul {
     list-style: none;
+    padding: 0;
 }
 .site-nav li {
     display: inline-block;
-    margin-right: 5px;
+    margin-right: 10px;
 }
 
 article {
