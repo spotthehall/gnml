@@ -170,25 +170,19 @@ article {
     margin: 0 0 3rem 0;
     padding: 0 0 3rem 0;
 }
+article h2, article h3 {
+    margin-top: 3rem;
+}
 article:last-of-type,
 main.archive article:last-of-type,
 single article {
     margin-bottom: 0;
-    border-bottom: none;
-    padding-bottom: 2rem;
+    padding-bottom: 0;
 }
 
-article h2, article h3 {
-    margin-top: 4rem;
-}
-
-.page-title {
-    line-height: 1.2;
-    margin-top: 0;
-}
+.page-title,
 .post-title {
     line-height: 1.2;
-    margin-top: 0;
 }
 .post-title a {
     color: var(--text);
