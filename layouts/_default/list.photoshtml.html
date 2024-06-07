@@ -2,7 +2,7 @@
 
 	<div class="photos-grid-container">
 
-	{{- $category := index .Site.Taxonomies.categories (lower .Site.Params.photos_use_category) -}}
+	{{- $category := "Photos" -}}
 	{{- $list := $category.Pages -}}
 	{{- $len := (len $list) -}}
 	{{ range $index, $value := $list }}
