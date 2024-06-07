@@ -1,6 +1,8 @@
 {{ define "main" }}
 <main class="archive">
+	
 	<h2 class="page-title">{{ .Title }}</h2>
+	
 	{{ $list := (where .Site.Pages "Type" "post") }}
 	{{ range $list }}
 	<article>
@@ -10,5 +12,6 @@
 		<p>{{ if .Title }}<b>{{ .Title }}:</b> {{ end }}{{ .Summary | safeHTML | truncate 150  }}</p>
     </article>
 	{{ end }}
+	
 </main>
 {{ end }}
