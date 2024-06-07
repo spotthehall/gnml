@@ -53,14 +53,16 @@ body {
     font-size: 2rem;
     line-height: 1.6;
     margin: 0 auto;
-    padding: 1rem 2rem;
-    max-width: 74rem;
+    padding: 2rem;
+    max-width: 78rem;
     -moz-font-feature-settings:    "kern" 1; 
     -ms-font-feature-settings:     "kern" 1; 
     -o-font-feature-settings:      "kern" 1; 
     -webkit-font-feature-settings: "kern" 1; 
     font-feature-settings:         "kern" 1;
     font-kerning: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 a {
     color: var(--link);
