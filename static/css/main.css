@@ -211,7 +211,7 @@ article ol li {
     justify-content: space-between;
     align-items: start;
     align-content: start;
-    gap: 10px;
+    gap: 15px 0;
 }
 .photo-grid-container a {
     flex-basis: 32%;
@@ -384,20 +384,8 @@ a.tinylytics_webring {
     background: #fff;
 }
 
-@media only screen and (max-width: 570px) {
-    header {
-        padding: 2rem 0 2.5rem 0;
-        margin-top: 0;
-    }
-    .site-nav ul {
-        display: flex;
-        justify-content: space-between;
-        text-align: right;
-        padding: 0;
-    }
-    .site-nav li {
-        display: inline-block;
-        margin: 0;
-        margin-left: 15px;
+@media only screen and (max-width: 600px) {
+    .photo-grid-container a {
+        flex-basis: 49%;
     }
 }
