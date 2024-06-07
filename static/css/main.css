@@ -186,12 +186,9 @@ single article {
 .post-title {
     line-height: 1.2;
 }
-/* .post-title a {
-    color: var(--text);
+.post-title {
+    margin-bottom: -10px;
 }
-.post-title a:hover, .post-title a:active {
-    color: var(--link);
-} */
 .post-date {
     color: var(--accent-3);
     font-size: 1.8rem;
