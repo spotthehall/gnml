@@ -167,8 +167,6 @@ article {
 article h2, article h3 {
     margin-top: 3rem;
 }
-article:last-of-type,
-main.archive article:last-of-type,
 single article {
     margin-bottom: 0;
     padding-bottom: 0;
