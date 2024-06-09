@@ -20,7 +20,7 @@
   <link rel="stylesheet" href="{{ "css/prism.css" | relURL }}?{{ .Site.Params.theme_seconds }}">
   <link rel="stylesheet" href="{{ "css/main.css" | relURL }}?{{ .Site.Params.theme_seconds }}">
   <link rel="stylesheet" href="{{ "custom.css" | relURL }}?{{ .Site.Params.theme_seconds }}">
-  {{ partialCached "wane.html" . }}
+  {{ if ne (.Site.Params.wane_link_color | default "") "" }}{{ partialCached "wane.html" . }}{{ end }}
   <link rel="canonical" href="{{ .Permalink }}">
   <link rel="author" href="humans.txt" />
   

@@ -12,7 +12,7 @@
 			"field": "params.wane_mastdodon_url",
 			"label": "Mastodon URL",
 			"type": "text",
-			"placeholder": "Your Mastodon username URL."
+			"placeholder": "Your Mastodon username URL"
 		},
 		{
 			"field": "params.wane_microblog_user",
