@@ -267,7 +267,7 @@ article ol li {
 }
 .photo-grid-container::after {
   content: "";
-  flex-basis: 32.4%;
+  flex-grow: 999;
 }
 
 .tinylytics_kudos {
