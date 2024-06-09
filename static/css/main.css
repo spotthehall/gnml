@@ -252,7 +252,7 @@ article ol li {
     padding: 0;
 }
 .photo-grid-container > li {
-    /* flex-basis: 32.4%; */
+    flex-basis: 32.4%;
     flex: 1 1 auto;
     height: 300px;
     cursor: pointer;
