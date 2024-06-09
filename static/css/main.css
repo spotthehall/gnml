@@ -432,8 +432,8 @@ a.tinylytics_webring {
 }
 
 @media only screen and (max-width: 600px) {
-    .site-nav li {
-        margin-right: 10px;
+    .site-nav a.social {
+        margin-right: 0;
     }
     .photo-grid-container a {
         flex-basis: 49%;
