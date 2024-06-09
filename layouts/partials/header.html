@@ -12,9 +12,8 @@
             <li><a href="{{ .URL | relLangURL | safeURL }}">{{ .Name }}</a></li>
             {{ end }}
         {{ end }}
-            <li><a href="{{ .Site.Params.wane_mastdodon_url }}" class="social mastodon"><i class="fa-brands fa-mastodon"></i></a></li>
-            <li><a href="https://micro.blog/{{ .Site.Params.wane_microblog_user }}" class="social microblog"><i class="fa-brands fa-microblog"></i></a></li>
-
+            {{ if ne (.Site.Params.wane_mastdodon_url | default "") "" }}<li><a href="{{ .Site.Params.wane_mastdodon_url }}" class="social mastodon"><i class="fa-brands fa-mastodon"></i></a></li>{{ end }}
+            {{ if ne (.Site.Params.wane_microblog_user | default "") "" }}<li><a href="https://micro.blog/{{ .Site.Params.wane_microblog_user }}" class="social microblog"><i class="fa-brands fa-microblog"></i></a></li>{{ end }}
         </ul>
     </nav>
     
