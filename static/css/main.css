@@ -347,11 +347,9 @@ article ol li {
 main.archive p > img {
     display: none;
 }
-main.archive p {
-    display: inline;
-}
 main.archive .entry {
-    margin: 2rem auto;
+    display: inline;
+    margin: 0 0 5rem 0;
 }
 
 .main-nav {
