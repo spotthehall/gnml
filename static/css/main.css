@@ -173,6 +173,8 @@ input[type=email] {
 
 .site-nav a.social {
     color: var(--social);
+    display: inline-block;
+    margin-right: -10px;
 }
 .site-nav a.mastodon:hover {
     color: #595aff;
