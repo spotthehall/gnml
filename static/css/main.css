@@ -245,18 +245,19 @@ article ol li {
 
 .photo-grid-container {
     display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    align-items: start;
-    align-content: start;
-    gap: 15px 0;
-    margin-top: 4rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
 }
-.photo-grid-container a {
+.photo-grid-container > li {
     flex-basis: 32%;
 }
-.photo-grid-item {
-    margin: 0;
+.photo-grid-container li img {
+  object-fit: cover;
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  border-radius: 6px;
 }
 
 .tinylytics_kudos {
