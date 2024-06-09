@@ -348,8 +348,10 @@ main.archive p > img {
     display: none;
 }
 main.archive .entry {
-    display: inline;
     margin: 0 0 5rem 0;
+}
+main.archive .entry p {
+    display: inline;
 }
 
 .main-nav {
