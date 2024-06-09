@@ -322,6 +322,7 @@ article ol li {
 .microblog_reply_textarea textarea:disabled,
 .microblog_reply_textarea textarea[disabled] {
     background: var(--accent-1);
+    border-color: var(--accent-2);
 }
 .microblog_reply_button input:disabled,
 .microblog_reply_button input[disabled] {
