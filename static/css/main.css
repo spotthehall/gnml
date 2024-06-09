@@ -261,6 +261,7 @@ article ol li {
   height: auto;
   vertical-align: middle;
   border-radius: 6px;
+  margin: 0;
 }
 
 .tinylytics_kudos {
