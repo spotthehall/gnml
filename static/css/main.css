@@ -170,6 +170,16 @@ input[type=email] {
     margin-right: 15px;
 }
 
+.site-nav a.social {
+    color: var(--accent-3);
+}
+.site-nav a.mastodon:hover {
+    color: #595aff;
+}
+.site-nav a.microblog:hover {
+    color: #ff8800;
+}
+
 article {
     margin: 0 0 5rem 0;
     padding: 0;
