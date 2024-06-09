@@ -446,7 +446,7 @@ a.tinylytics_webring {
     .site-nav a.social {
         margin-right: 0;
     }
-    .photo-grid-container a {
+    .photo-grid-container > li {
         flex-basis: 49%;
     }
 }
