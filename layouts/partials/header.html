@@ -1,9 +1,10 @@
 <header>
     
-	<h1 class="site-title"><a href="/">{{ .Site.Title }}</a></h1>
+    <h1 class="site-title"><a href="/">{{ .Site.Title }}</a></h1>
     
     <nav class="site-nav">
         <ul>
+            <li><a href="/">Home</a></li>
         {{ range .Site.Menus.main }}
             {{ if .Page.Params.redirect_url }}
             <li><a href="{{ .Page.Params.redirect_url }}">{{ .Name }}</a></li>
@@ -11,6 +12,9 @@
             <li><a href="{{ .URL | relLangURL | safeURL }}">{{ .Name }}</a></li>
             {{ end }}
         {{ end }}
+            <li><a href="https://mastodon.social/@jimmitchell"><i class="fa-brands fa-mastodon"></i></a></li>
+            <li><a href="https://micro.blog/jimmitchell"><i class="fa-brands fa-microblog"></i></a></li>
+
         </ul>
     </nav>
     

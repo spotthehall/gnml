@@ -6,7 +6,6 @@
     --accent-2: #dfe0e0;
     --accent-3: #626768;
     --sans-serif-font: -apple-system, system-ui, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    --serif-font: -apple-system-ui-serif, ui-serif, 'Georgia', serif;
     --mono-space-font: ui-monospace, SFMono-Regular, ui-monospace, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
     --font-weight-normal: 400;
     --font-weight-bold: 700;
@@ -150,12 +149,14 @@ input[type=email] {
     margin-bottom: -1rem;
     font-size: 3rem;
 }
-.site-title a {
+.site-title a, .post-title a {
     color: var(--text);
     text-decoration: none;
 }
-.site-title a:hover, .site-title a:active {
+.site-title a:hover, .site-title a:active,
+.post-title a:hover, .post-title a:active {
     color: var(--link);
+    text-decoration: underline;
 }
 .site-nav {
     margin-bottom: 5rem;
@@ -323,6 +324,10 @@ article ol li {
     border-left: 3px solid var(--link);
     color: var(--text);
     padding: 16px 24px;
+}
+
+.last-update {
+    margin: 4rem 0;
 }
 
 main.archive p > img {
