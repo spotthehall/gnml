@@ -442,12 +442,12 @@ a.tinylytics_webring {
     background: #fff;
 }
 
-@media only screen and (max-width: 540px) {
+@media only screen and (max-width: 600px) {
     .site-nav a.social {
         margin-right: 0;
     }
     .photo-grid-container > li {
-        flex-basis: 48.8%;
+        flex-basis: 49.8%;
         height: 160px;
     }
 }
