@@ -350,7 +350,7 @@ main.archive p > img {
 main.archive .entry {
     margin: 0 0 5rem 0;
 }
-main.archive .entry p {
+main.archive p.entry {
     display: inline;
 }
 
