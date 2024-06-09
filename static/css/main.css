@@ -252,13 +252,12 @@ article ol li {
     padding: 0;
 }
 .photo-grid-container > li {
-    flex-basis: 32%;
+    flex-basis: 32.4%;
 }
 .photo-grid-container li img {
   object-fit: cover;
   max-width: 100%;
-  max-height: 60%;
-  height: auto;
+  height: 60%;
   vertical-align: middle;
   border-radius: 6px;
   margin: 0;
