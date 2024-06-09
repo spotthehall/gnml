@@ -256,7 +256,6 @@ article ol li {
     cursor: pointer;
     position: relative;
     flex: 1 1 auto;
-    flex-grow: 1;
 }
 .photo-grid-container li img {
     margin: 0;
@@ -268,7 +267,7 @@ article ol li {
 }
 .photo-grid-container::after {
   content: "";
-  flex-grow: 999;
+  flex-basis: 32.4%;
 }
 
 .tinylytics_kudos {
