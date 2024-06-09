@@ -248,6 +248,7 @@ article ol li {
     flex-wrap: wrap;
     justify-content: center;
     gap: 10px;
+    list-style: none;
 }
 .photo-grid-container > li {
     flex-basis: 32%;
