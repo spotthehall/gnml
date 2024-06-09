@@ -12,13 +12,19 @@
 			"field": "params.wane_mastdodon_url",
 			"label": "Mastodon URL",
 			"type": "text",
-			"placeholder": "Your Mastodon URL. E.g. \"https:mastodon.social/@jimmitchell\""
+			"placeholder": "Your Mastodon username URL."
 		},
 		{
 			"field": "params.wane_microblog_user",
 			"label": "Microblog username",
 			"type": "text",
-			"placeholder": "Enter your Micro.blog username. E.g. \"jimmitchell\""
+			"placeholder": "Your Micro.blog username"
+		},
+		{
+			"field": "params.wane_github_user",
+			"label": "Github username",
+			"type": "text",
+			"placeholder": "Your Github username"
 		}
 	]
 }

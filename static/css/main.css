@@ -182,6 +182,9 @@ input[type=email] {
 .site-nav a.microblog:hover {
     color: #ff8800;
 }
+.site-nav a.github:hover {
+    color: #4078c0;
+}
 
 article {
     margin: 0 0 5rem 0;
