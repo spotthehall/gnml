@@ -255,7 +255,6 @@ article ol li {
     flex-basis: 32.4%;
     cursor: pointer;
     position: relative;
-    flex: 1 1 auto;
 }
 .photo-grid-container li img {
     margin: 0;
