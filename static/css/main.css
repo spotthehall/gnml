@@ -344,13 +344,13 @@ article ol li {
     margin: 4rem 0;
 }
 
-main.archive p > img {
+main.archive .entry p > img {
     display: none;
 }
 main.archive .entry {
     margin: 0 0 5rem 0;
 }
-main.archive p.entry {
+main.archive .entry p {
     display: inline;
 }
 

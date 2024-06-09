@@ -4,8 +4,10 @@
 		<h2 class="page-title">{{ .Title }}</h2>
 		{{ $list := (where .Site.Pages "Type" "post") }}
 		{{ range $list }}
-				<p class="post-date btm-margin"><a href="{{ .Permalink }}">{{ .Date.Format "Monday, January 2, 2006" }}</a></p>
-				<p class="entry">{{ if .Title }}<b>{{ .Title }}:</b> {{ end }}{{ .Summary | safeHTML | truncate 150  }}</p>
+		<p class="post-date btm-margin"><a href="{{ .Permalink }}">{{ .Date.Format "Monday, January 2, 2006" }}</a></p>
+		<div class="entry">
+			<p>{{ if .Title }}<b>{{ .Title }}:</b> {{ end }}{{ .Summary | safeHTML | truncate 150  }}</p>
+		</div>
 		{{ end }}
 	</article>
 </main>
