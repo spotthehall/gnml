@@ -245,7 +245,8 @@ article ol li {
 
 .photo-grid-container {
     display: flex;
-    justify-content: center;
+    flex-flow: row wrap;
+    justify-content: space-between;
     align-items: start;
     align-content: start;
     gap: 15px 0;
@@ -256,10 +257,6 @@ article ol li {
 }
 .photo-grid-item {
     margin: 0;
-    object-fit: cover;
-    max-width: 100%;
-    height: auto;
-    vertical-align: middle;
 }
 
 .tinylytics_kudos {
