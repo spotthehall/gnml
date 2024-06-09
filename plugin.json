@@ -1,5 +1,24 @@
 {
-	"version": "1.0.0",
-	"title": "wane",
-	"description": "A minimal developer theme for Micro.blog"
+	"version": "1.0.1",
+	"title": "Wane",
+	"description": "A really simple Micro.blog theme.",
+	"fields": [
+		{
+			"field": "params.wane_link_color",
+			"label": "Link color",
+			"type": "color"
+		},
+		{
+			"field": "params.wane_mastdodon_url",
+			"label": "Mastodon URL",
+			"type": "text",
+			"placeholder": "Your Mastodon URL. E.g. \"https:mastodon.social/@jimmitchell\""
+		},
+		{
+			"field": "params.wane_microblog_url",
+			"label": "Microblog username",
+			"type": "text",
+			"placeholder": "Enter your Micro.blog username. E.g. \"jimmitchell\""
+		}
+	]
 }
