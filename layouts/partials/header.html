@@ -12,9 +12,9 @@
             <li><a href="{{ .URL | relLangURL | safeURL }}">{{ .Name }}</a></li>
             {{ end }}
         {{ end }}
-            {{ if ne (.Site.Params.wane_mastdodon_url | default "") "" }}<li><a href="{{ .Site.Params.wane_mastdodon_url }}" class="social mastodon"><i class="fa-brands fa-mastodon fa-sm"></i></a></li>{{ end }}
-            {{ if ne (.Site.Params.wane_microblog_user | default "") "" }}<li><a href="https://micro.blog/{{ .Site.Params.wane_microblog_user }}" class="social microblog"><i class="fa-brands fa-microblog fa-sm"></i></a></li>{{ end }}
-            {{ if ne (.Site.Params.wane_github_user | default "") "" }}<li><a href="https://github.com/{{ .Site.Params.wane_github_user }}" class="social github"><i class="fa-brands fa-github fa-sm"></i></a></li>{{ end }}
+            {{ if ne (.Site.Params.wane_mastdodon_url | default "") "" }}<li><a href="{{ .Site.Params.wane_mastdodon_url }}" class="social mastodon"><i class="fa-brands fa-mastodon"></i></a></li>{{ end }}
+            {{ if ne (.Site.Params.wane_microblog_user | default "") "" }}<li><a href="https://micro.blog/{{ .Site.Params.wane_microblog_user }}" class="social microblog"><i class="fa-brands fa-microblog"></i></a></li>{{ end }}
+            {{ if ne (.Site.Params.wane_github_user | default "") "" }}<li><a href="https://github.com/{{ .Site.Params.wane_github_user }}" class="social github"><i class="fa-brands fa-github"></i></a></li>{{ end }}
         </ul>
     </nav>
     

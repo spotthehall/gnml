@@ -161,6 +161,7 @@ input[type=email] {
 }
 .site-nav {
     margin-bottom: 5rem;
+    font-size: 1.8rem;
 }
 .site-nav ul {
     list-style: none;
