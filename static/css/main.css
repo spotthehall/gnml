@@ -196,6 +196,9 @@ single article {
     color: var(--accent-3);
     font-size: 1.8rem;
 }
+.btm-margin {
+    margin-bottom: -10px;
+}
 
 article img {
     width: 100%;
