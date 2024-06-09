@@ -252,10 +252,11 @@ article ol li {
 }
 .photo-grid-container > li {
     height: 170px;
-    width: 32.4%;
+    flex-basis: 32.4%;
     cursor: pointer;
     position: relative;
     flex: 1 1 auto;
+    flex-grow: 1;
 }
 .photo-grid-container li img {
     margin: 0;
