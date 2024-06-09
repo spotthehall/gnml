@@ -15,7 +15,7 @@
 			"placeholder": "Your Mastodon URL. E.g. \"https:mastodon.social/@jimmitchell\""
 		},
 		{
-			"field": "params.wane_microblog_url",
+			"field": "params.wane_microblog_user",
 			"label": "Microblog username",
 			"type": "text",
 			"placeholder": "Enter your Micro.blog username. E.g. \"jimmitchell\""
