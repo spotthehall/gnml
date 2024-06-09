@@ -162,7 +162,7 @@ input[type=email] {
 }
 
 .site-title {
-    margin-bottom: -1rem;
+    margin-bottom: -.5rem;
     font-size: 3rem;
 }
 .site-title a, .post-title a {
