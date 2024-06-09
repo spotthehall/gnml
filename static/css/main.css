@@ -246,7 +246,9 @@ article ol li {
 .photo-grid-container {
     display: flex;
     justify-content: center;
-    gap: 15px;
+    align-items: start;
+    align-content: start;
+    gap: 15px 0;
     margin-top: 4rem;
 }
 .photo-grid-container a {
