@@ -252,7 +252,7 @@ article ol li {
 }
 .photo-grid-container > li {
     height: 170px;
-    flex-basis: 32.4%;
+    flex-basis: 32.3%;
     cursor: pointer;
     position: relative;
 }
