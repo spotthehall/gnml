@@ -6,7 +6,7 @@
     --accent-2: #dfdfdf;
     --accent-3: #676767;
     --social: #999;
-    --sans-serif-font: 'Nunito Sans', -apple-system, system-ui, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    --sans-serif-font: -apple-system, system-ui, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif;
     --mono-space-font: ui-monospace, SFMono-Regular, ui-monospace, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
     --font-weight-normal: 400;
     --font-weight-bold: 700;
