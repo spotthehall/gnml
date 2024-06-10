@@ -175,7 +175,7 @@ input[type=email] {
     text-decoration: underline;
 }
 .site-nav {
-    margin-bottom: 5rem;
+    margin: 3rem 0 5rem;
     font-size: 1.8rem;
 }
 .site-nav ul {
