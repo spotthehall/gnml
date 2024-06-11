@@ -1,5 +1,5 @@
 {
-	"version": "1.0.3",
+	"version": "1.0.4",
 	"title": "Wane",
 	"description": "A really simple Micro.blog theme.",
 	"fields": [
@@ -7,24 +7,6 @@
 			"field": "params.wane_link_color",
 			"label": "Link color",
 			"type": "color"
-		},
-		{
-			"field": "params.wane_mastdodon_url",
-			"label": "Mastodon URL",
-			"type": "text",
-			"placeholder": "Your Mastodon username URL"
-		},
-		{
-			"field": "params.wane_microblog_user",
-			"label": "Microblog username",
-			"type": "text",
-			"placeholder": "Your Micro.blog username"
-		},
-		{
-			"field": "params.wane_github_user",
-			"label": "Github username",
-			"type": "text",
-			"placeholder": "Your Github username"
 		}
 	]
 }
