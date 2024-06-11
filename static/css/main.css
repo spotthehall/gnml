@@ -255,6 +255,7 @@ ul.photo-grid-container li {
     flex-basis: 33.3334%;
     cursor: pointer;
     position: relative;
+    margin-bottom: 0;
 }
 ul.photo-grid-container li img {
     margin: 0;
@@ -262,7 +263,8 @@ ul.photo-grid-container li img {
     width: 100%;
     height: 100%;
     vertical-align: middle;
-    /* border-radius: 6px; */
+    border-radius: 0;
+    border: 2px solid transparent;
 }
 ul.photo-grid-container::after {
   content: "";
