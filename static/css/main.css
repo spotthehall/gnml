@@ -243,30 +243,22 @@ article ol li {
     margin-bottom:5px;
 }
 
-.photo-grid-container {
+ul.photo-grid-container {
     list-style: none;
     padding: 0;
     display: flex;
     flex-wrap: wrap;
-    gap: 5px 10px;
 }
-.photo-grid-container > li {
-    height: 170px;
-    flex-basis: 32.3%;
-    cursor: pointer;
-    position: relative;
+ul.photo-grid-container > li {
+    height: 40vh;
+    flex-grow: 1;
 }
-.photo-grid-container li img {
+ul.photo-grid-container li img {
     margin: 0;
     object-fit: cover;
-    width: 100%;
-    height: 100%;
-    vertical-align: middle;
-    border-radius: 6px;
-}
-.photo-grid-container::after {
-  content: "";
-  flex-grow: 999;
+    max-width: 100%;
+    max-height: 100%;
+    vertical-align: bottom;
 }
 
 .tinylytics_kudos {
