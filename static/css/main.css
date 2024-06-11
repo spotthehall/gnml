@@ -86,6 +86,9 @@ h3 {
 h4, h5, h6 {
     font-size: 2rem;
 }
+b, strong {
+  font-weight: 700;
+}
 hr {
     border: none;
     height: 1px;
@@ -107,6 +110,7 @@ th, td {
     padding: 6px;
     border: 1px solid var(--accent-3);
     text-align: left;
+    font-weight: 700;
 }
 th {
     background: var(--accent-1);
@@ -168,12 +172,15 @@ input[type=email] {
 .site-title {
     margin-bottom: -.5rem;
 }
-.site-title a, .post-title a {
+.site-title a,
+.post-title a {
     color: var(--text);
     text-decoration: none;
 }
-.site-title a:hover, .site-title a:active,
-.post-title a:hover, .post-title a:active {
+.site-title a:hover,
+.site-title a:active,
+.post-title a:hover,
+.post-title a:active {
     color: var(--link);
     text-decoration: underline;
 }
