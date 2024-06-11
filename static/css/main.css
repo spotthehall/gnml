@@ -75,16 +75,16 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 1.2;
 }
 h1 {
-    font-size: 3rem;
-}
-h2 {
     font-size: 2.8rem;
 }
+h2 {
+    font-size: 2.6rem;
+}
 h3 {
-    font-size: 2.4rem;
+    font-size: 2.2rem;
 }
 h4, h5, h6 {
-    font-size: 2.2rem;
+    font-size: 2rem;
 }
 hr {
     border: none;
@@ -139,7 +139,8 @@ pre code {
     color: inherit;
     padding: 0;
 }
-input[type=button], input[type=submit] {
+input[type=button],
+input[type=submit] {
     background-color: var(--accent-2);
     border: none;
     color: var(--text);
@@ -149,7 +150,10 @@ input[type=button], input[type=submit] {
     cursor: pointer;
     border-radius: 6px;
 }
-input[type=button]:hover, input[type=button]:active, input[type=submit]:hover, input[type=submit]:active {
+input[type=button]:hover,
+input[type=button]:active,
+input[type=submit]:hover,
+input[type=submit]:active {
     color: #fff;
     background: var(--link);
 }
@@ -163,7 +167,6 @@ input[type=email] {
 
 .site-title {
     margin-bottom: -.5rem;
-    font-size: 3rem;
 }
 .site-title a, .post-title a {
     color: var(--text);
@@ -187,21 +190,6 @@ input[type=email] {
     margin-right: 15px;
 }
 
-.site-nav a.social {
-    color: var(--social);
-    display: inline-block;
-    margin-right: -10px;
-}
-.site-nav a.mastodon:hover {
-    color: #595aff;
-}
-.site-nav a.microblog:hover {
-    color: #ff8800;
-}
-.site-nav a.github:hover {
-    color: #4078c0;
-}
-
 article {
     margin: 0 0 5rem 0;
     padding: 0;
@@ -217,19 +205,13 @@ single article {
     padding-bottom: 0;
 }
 
-.page-title,
-.post-title {
-    line-height: 1.2;
-}
-.post-title {
+.post-title,
+.btm-margin {
     margin-bottom: -10px;
 }
 .post-date {
     color: var(--accent-3);
     font-size: 1.8rem;
-}
-.btm-margin {
-    margin-bottom: -10px;
 }
 
 article img {
@@ -266,6 +248,12 @@ ul.photo-grid-container li img {
 }
 ul.photo-grid-container li:last-child {
   flex-grow: 10;
+  height: 0;
+}
+@media only screen and (max-width: 700px) {
+    ul.photo-grid-container li {
+        flex-basis: 50%;
+    }
 }
 
 .tinylytics_kudos {
@@ -439,10 +427,4 @@ a.tinylytics_webring {
     vertical-align: middle;
     margin-right: 6px;
     background: #fff;
-}
-
-@media only screen and (max-width: 700px) {
-    ul.photo-grid-container li {
-        flex-basis: 50%;
-    }
 }
