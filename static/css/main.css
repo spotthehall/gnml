@@ -260,6 +260,9 @@ ul.photo-grid-container li img {
     max-height: 100%;
     vertical-align: bottom;
 }
+ul.photo-grid-container li:last-child {
+  flex-grow: 10;
+}
 
 .tinylytics_kudos {
     text-decoration: none;
