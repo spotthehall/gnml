@@ -229,6 +229,7 @@ ul.photo-grid-container {
     padding: 0;
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 5rem;
 }
 ul.photo-grid-container li {
     height: 170px;
