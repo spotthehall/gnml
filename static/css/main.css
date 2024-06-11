@@ -235,7 +235,6 @@ single article {
 article img {
     width: 100%;
     height: auto;
-    border-radius: 6px;
     margin: 2rem auto;
 }
 article ul li,
