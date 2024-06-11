@@ -251,12 +251,12 @@ ul.photo-grid-container {
 }
 ul.photo-grid-container li {
     height: 40vh;
+    width: 33.3334%;
     flex-grow: 1;
 }
 ul.photo-grid-container li img {
     margin: 0;
     object-fit: cover;
-    width: 33.3334%;
     height: auto;
     vertical-align: center;
 }
