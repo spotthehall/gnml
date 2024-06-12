@@ -406,7 +406,7 @@ main.archive .entry p {
 footer {
     color: var(--accent-3);
     font-size: 1.8rem;
-    padding: 0 0 3rem 0;
+    padding: 1rem 0 3rem 0;
     text-align: center;
 }
 footer p {
