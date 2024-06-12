@@ -26,7 +26,7 @@
   <link rel="author" href="humans.txt" />
   
   {{ with .OutputFormats.Get "rss" -}}
-    {{ printf `<link rel=%q type=%q href=%q title=%q>` .Rel .MediaType.Type .Permalink site.Title | safeHTML }}
+    {{ printf "<link rel=%q type=%q href=%q title=%q>" .Rel .MediaType.Type .Permalink site.Title | safeHTML }}
     <link href="{{ "podcast.xml" | absURL }}" rel="alternate" type="application/rss+xml" title="Podcast" />
     <link rel="alternate" type="application/json" title="{{ .Site.Title }}" href="{{ "feed.json" | absURL }}" />
     <link rel="EditURI" type="application/rsd+xml" href="{{ "rsd.xml" | absURL }}" />
