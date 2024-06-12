@@ -4,7 +4,6 @@
     
     <nav class="site-nav">
         <ul>
-            <li><a href="/">Home</a></li>
         {{ range .Site.Menus.main }}
             {{ if .Page.Params.redirect_url }}
             <li><a href="{{ .Page.Params.redirect_url }}">{{ .Name }}</a></li>
