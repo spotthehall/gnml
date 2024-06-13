@@ -6,7 +6,7 @@
     --accent-2: #dfdfdf;
     --accent-3: #676767;
     --social: #999;
-    --sans-serif-font: 'Nunito Sans', -apple-system, system-ui, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    --sans-serif-font: 'Proxima Nova', -apple-system, system-ui, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif;
     --mono-space-font: ui-monospace, SFMono-Regular, ui-monospace, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
     --font-weight-normal: 400;
     --font-weight-bold: 700;
@@ -35,7 +35,7 @@ input, button, textarea, select {
 p, h1, h2, h3, h4, h5, h6 {
     overflow-wrap: break-word;
 }
-h1, h2, h3, h4, h5, h6, b, strong {
+h1, h2, h3, h4, h5, h6, b, strong, th, td {
     font-weight: var(--font-weight-bold);
     font-family: var(--sans-serif-font);
 }
@@ -86,9 +86,6 @@ h3 {
 h4, h5, h6 {
     font-size: 2rem;
 }
-b, strong {
-  font-weight: 700;
-}
 hr {
     border: none;
     height: 1px;
@@ -110,7 +107,6 @@ th, td {
     padding: 6px;
     border: 1px solid var(--accent-3);
     text-align: left;
-    font-weight: 700;
 }
 th {
     background: var(--accent-1);
