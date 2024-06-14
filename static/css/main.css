@@ -165,10 +165,6 @@ input[type=email] {
     width: 60%;
 }
 
-.site-title {
-  margin-bottom: -.5rem;
-
-}
 .site-title a,
 .post-title a {
     color: var(--text);
@@ -182,7 +178,7 @@ input[type=email] {
     text-decoration: underline;
 }
 .site-nav {
-    margin: 3rem 0 5rem;
+    margin: 2rem 0 5rem;
     font-size: 1.8rem;
 }
 .site-nav ul {
