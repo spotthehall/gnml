@@ -1,7 +1,7 @@
 {{ define "main" }}
 	<article>
+		<h2 class="page-title">{{ .Title }}</h2>
 		<ul class="photo-grid-container">
-	
 		{{- $category := index .Site.Taxonomies.categories (lower "Photos") -}}
 		{{- $list := $category.Pages -}}
 		{{- $len := (len $list) -}}
