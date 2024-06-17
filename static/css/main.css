@@ -6,7 +6,7 @@
     --accent-2: #dfdfdf;
     --accent-3: #676767;
     --social: #999;
-    --sans-serif-font: Mulish, -apple-system, system-ui, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    --sans-serif-font: Inter, -apple-system, system-ui, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif;
     --mono-space-font: ui-monospace, SFMono-Regular, ui-monospace, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
     --font-weight-normal: 400;
     --font-weight-bold: 700;
@@ -157,7 +157,9 @@ input[type=submit]:active {
     color: #fff;
     background: var(--link);
 }
-input[type=email] {
+input[type=email],
+input[type=text],
+input[type=search] {
     padding: 5px 8px;
     border: 1px solid var(--accent-3);
     border-radius: 6px;
