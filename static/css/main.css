@@ -165,6 +165,7 @@ input[type=search] {
     border-radius: 6px;
     margin: 4px 1px;
     width: 60%;
+    font-size: 1.8rem;
 }
 
 header {
