@@ -171,6 +171,9 @@ input[type=search] {
 header {
   text-align: center;
 }
+.site-title {
+  font-family: "Rock Salt", Inter, -apple-system, system-ui, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
 .site-title a,
 .post-title a {
     color: var(--text);
