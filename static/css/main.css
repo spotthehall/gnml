@@ -1,21 +1,20 @@
 :root {
     --background: #fff;
     --text: #363636;
-    --link: #0097d6;
+    --link: #00a1e0;
     --accent-1: #f8f8f8;
     --accent-2: #dfdfdf;
     --accent-3: #676767;
     --social: #999;
-    --sans-serif-font: Inter, -apple-system, system-ui, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    --sans-serif-font: -apple-system, system-ui, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif;
     --mono-space-font: ui-monospace, SFMono-Regular, ui-monospace, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
     --font-weight-normal: 400;
-    --font-weight-bold: 700;
+    --font-weight-bold: 800;
 }
 @media (prefers-color-scheme: dark) {
     :root {
         --background: #191919;
         --text: #f8f8f8;
-        --link: #0097d6;
         --accent-1: #2c2c2c;
         --accent-2: #4c4c4c;
         --accent-3: #d9d9d9;
@@ -51,10 +50,10 @@ body {
     color: var(--text);
     font-family: var(--sans-serif-font);
     font-size: 1.8rem;
-    line-height: 1.7;
+    line-height: 1.6;
     margin: 0 auto;
     padding: 2rem;
-    max-width: 74rem;
+    max-width: 72rem;
     -moz-font-feature-settings:    "kern" 1; 
     -ms-font-feature-settings:     "kern" 1; 
     -o-font-feature-settings:      "kern" 1; 
@@ -73,6 +72,7 @@ a:hover, a:active {
 }
 h1, h2, h3, h4, h5, h6 {
     line-height: 1.2;
+  font-weight: var(--font-weight-bold);
 }
 h1 {
     font-size: 2.8rem;
@@ -168,12 +168,8 @@ input[type=search] {
     font-size: 1.8rem;
     height: auto;
 }
-
-header {
-  text-align: center;
-}
 .site-title {
-  font-family: "Rock Salt", Inter, -apple-system, system-ui, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 2rem;
 }
 .site-title a,
 .post-title a {
@@ -197,7 +193,10 @@ header {
 }
 .site-nav li {
     display: inline-block;
-    margin: 0 10px;
+    margin: 0 2rem 0 0;
+}
+.site-nav li:last-of-type {
+  margin-right: 0;
 }
 
 article {
