@@ -271,7 +271,6 @@ ul.photo-grid-container li:last-child {
 @media only screen and (max-width: 650px) {
     ul.photo-grid-container li {
         flex-basis: 50%;
-        height: 140px;
     }
 }
 
