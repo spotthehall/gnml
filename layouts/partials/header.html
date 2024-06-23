@@ -17,5 +17,5 @@
         {{ if ne (.Site.Params.wane_github | default "") "" }}<li><a href="{{ .Site.Params.wane_Github }}">Github</a></li>{{ end }}
         </ul>
     </nav>
-    
+    <p>{{ .Site.Params.wane_mastdon }}</p>
 </header>
