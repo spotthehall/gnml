@@ -1,11 +1,11 @@
 :root {
     --background: #fff;
-    --text: #363636;
+    --text: #484848;
     --link: #00a1e0;
     --accent-1: #f8f8f8;
     --accent-2: #dfdfdf;
     --accent-3: #676767;
-    --social: #999;
+    --social: #9c9c9c;
     --sans-serif-font: Roboto, -apple-system, system-ui, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif;
     --mono-space-font: ui-monospace, SFMono-Regular, ui-monospace, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
     --font-weight-normal: 400;
