@@ -12,7 +12,7 @@
       		<p><a href="{{ .RelPermalink }}">Continue reading →</a></p>
     	    {{ end }}
             {{ else }}
-			<p class="post-date btm-margin"><a href="{{ .Permalink }}">{{ .Date.Format "Monday, January 2, 2006" }}</a></p>
+			<p class="post-date btm-margin"><a href="{{ .Permalink }}">{{ .Date.Format "Monday, January 2, 2006" }} →</a></p>
             {{ .Content }}
             {{ end }}
         </article>

@@ -208,6 +208,7 @@ single article {
 }
 .post-date {
     color: var(--accent-3);
+    font-size: 1.6rem;
 }
 
 article img {
