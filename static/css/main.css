@@ -311,6 +311,10 @@ ul.photo-grid-container li:last-child {
     display: inline-block;
     margin-top: -2px;
 }
+.microblog_time a:hover,
+.microblog_time a:active {
+  color: var(--link);
+}
 .microblog_time a,
 .microblog_time a:visited {
     color: var(--accent-dark2);
