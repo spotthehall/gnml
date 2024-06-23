@@ -184,7 +184,7 @@ header {
 }
 .site-nav li {
     display: inline-block;
-    margin: 0 1rem;
+    margin: 0 .85rem;
 }
 
 article {
