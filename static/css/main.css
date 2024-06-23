@@ -1,6 +1,6 @@
 :root {
     --background: #fff;
-    --text: #484848;
+    --text: #363636;
     --link: #00a1e0;
     --accent-1: #f8f8f8;
     --accent-2: #dfdfdf;
@@ -271,6 +271,7 @@ ul.photo-grid-container li:last-child {
 @media only screen and (max-width: 650px) {
     ul.photo-grid-container li {
         flex-basis: 50%;
+        height: 140px;
     }
 }
 
