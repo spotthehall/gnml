@@ -314,6 +314,7 @@ ul.photo-grid-container li:last-child {
 .microblog_time a:hover,
 .microblog_time a:active {
   color: var(--link);
+  text-decoration: underline;
 }
 .microblog_time a,
 .microblog_time a:visited {
