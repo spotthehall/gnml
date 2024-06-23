@@ -175,18 +175,6 @@ header {
 .site-title {
   font-size: 2.5rem;
 }
-.site-title a,
-.post-title a {
-    color: var(--text);
-    text-decoration: none;
-}
-.site-title a:hover,
-.site-title a:active,
-.post-title a:hover,
-.post-title a:active {
-    color: var(--link);
-    text-decoration: underline;
-}
 .site-nav {
     margin: 2rem 0 5rem;
 }
@@ -197,9 +185,6 @@ header {
 .site-nav li {
     display: inline-block;
     margin: 0 1rem;
-}
-.site-nav li:last-of-type {
-  margin-right: 0;
 }
 
 article {
@@ -293,17 +278,6 @@ ul.photo-grid-container li:last-child {
     color: var(--background);
 }
 
-.post-tags {
-    list-style: none;
-    margin: 0 0 2rem 0;
-    padding: 0;
-    font-size: 1.6rem;
-}
-.post-tags li {
-    margin-right: 6px;
-    display: inline;
-}
-
 .microblog_conversation {
     margin: 5rem 0;
 }
@@ -331,7 +305,7 @@ ul.photo-grid-container li:last-child {
     vertical-align: middle;
     width: 30px;
     height: auto;
-    border-radius: 50%;
+    border-radius: 6px;
     max-width: 30px !important;
     display: inline-block;
     margin-top: -2px;
