@@ -12,6 +12,9 @@
             <li><a href="{{ .URL | relLangURL | safeURL }}">{{ .Name }}</a></li>
             {{ end }}
         {{ end }}
+        {{ if ne (.Site.Params.wane_mastodon | default "") "" }}<li><a href="{{ .Site.Params.wane_mastdon }}">Mastodon</a></li>{{ end }}
+        {{ if ne (.Site.Params.wane_microblog | default "") "" }}<li><a href="{{ .Site.Params.wane_microblog }}">Micro.blog</a></li>{{ end }}
+        {{ if ne (.Site.Params.wane_github | default "") "" }}<li><a href="{{ .Site.Params.wane_Github }}">Github</a></li>{{ end }}
         </ul>
     </nav>
     
