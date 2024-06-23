@@ -6,10 +6,10 @@
     --accent-2: #dfdfdf;
     --accent-3: #676767;
     --social: #999;
-    --sans-serif-font: -apple-system, system-ui, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    --sans-serif-font: Roboto, -apple-system, system-ui, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif;
     --mono-space-font: ui-monospace, SFMono-Regular, ui-monospace, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
     --font-weight-normal: 400;
-    --font-weight-bold: 800;
+    --font-weight-bold: 700;
 }
 @media (prefers-color-scheme: dark) {
     :root {
@@ -169,8 +169,11 @@ input[type=search] {
     height: auto;
 }
 
+header {
+  text-align: center;
+}
 .site-title {
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 .site-title a,
 .post-title a {
@@ -186,8 +189,6 @@ input[type=search] {
 }
 .site-nav {
     margin: 2rem 0 5rem;
-    font-size: 1.6rem;
-    font-weight: var(--font-weight-bold);
 }
 .site-nav ul {
     list-style: none;
@@ -195,14 +196,14 @@ input[type=search] {
 }
 .site-nav li {
     display: inline-block;
-    margin: 0 2rem 0 0;
+    margin: 0 1rem;
 }
 .site-nav li:last-of-type {
   margin-right: 0;
 }
 
 article {
-    margin: 0 0 5rem 0;
+    margin: 0 0 6rem 0;
     padding: 0;
 }
 article:last-of-type {
@@ -222,14 +223,12 @@ single article {
 }
 .post-date {
     color: var(--accent-3);
-    font-size: 1.6rem;
 }
 
 article img {
     width: 100%;
     height: auto;
     margin: 2rem auto;
-    /* border-radius: 6px; */
 }
 article ul li,
 article ol li {
@@ -242,6 +241,7 @@ ul.photo-grid-container {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 5rem;
+  margin: 0 -4px 5rem -4px;
 }
 ul.photo-grid-container li {
     height: 170px;
@@ -256,7 +256,7 @@ ul.photo-grid-container li img {
     width: 100%;
     height: 100%;
     vertical-align: middle;
-    border: 2px solid transparent;
+    border: 4px solid transparent;
 }
 ul.photo-grid-container li img:hover {
   -moz-filter: brightness(70%);
