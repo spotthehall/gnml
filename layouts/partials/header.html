@@ -12,9 +12,9 @@
             <li><a href="{{ .URL | relLangURL | safeURL }}">{{ .Name }}</a></li>
             {{ end }}
         {{ end }}
-        {{ if ne (.Site.Params.wane_mastodon | default "") "" }}<li><a href="{{ .Site.Params.wane_mastodon }}">Mastodon</a></li>{{ end }}
-        {{ if ne (.Site.Params.wane_microblog | default "") "" }}<li><a href="{{ .Site.Params.wane_microblog }}">Micro.blog</a></li>{{ end }}
-        {{ if ne (.Site.Params.wane_github | default "") "" }}<li><a href="{{ .Site.Params.wane_github }}">Github</a></li>{{ end }}
+        {{ if ne (.Site.Params.wane_mastodon | default "") "" }}<li><a href="{{ .Site.Params.wane_mastodon }}" target="_blank">Mastodon</a></li>{{ end }}
+        {{ if ne (.Site.Params.wane_microblog | default "") "" }}<li><a href="{{ .Site.Params.wane_microblog }}" target="_blank">Micro.blog</a></li>{{ end }}
+        {{ if ne (.Site.Params.wane_github | default "") "" }}<li><a href="{{ .Site.Params.wane_github }}" target="_blank">Github</a></li>{{ end }}
         </ul>
     </nav>
 </header>
