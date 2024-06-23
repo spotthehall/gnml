@@ -7,6 +7,24 @@
 			"field": "params.wane_link_color",
 			"label": "Link color",
 			"type": "color"
+		},
+		{
+			"field": "params.wane_mastodon",
+			"label": "Mastodon URL",
+			"type": "text",
+			"placeholder": "https://mastodon.social/@username"
+		},
+		{
+			"field": "params.wane_microblog",
+			"label": "Micro.blog URL",
+			"type": "text",
+			"placeholder": "https://micro.blog/username"
+		},
+		{
+			"field": "params.wane_github",
+			"label": "Github URL",
+			"type": "text",
+			"placeholder": "https://github.com/username"
 		}
 	]
 }
