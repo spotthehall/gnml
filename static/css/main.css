@@ -206,6 +206,14 @@ single article {
 .btm-margin {
     margin-bottom: -10px;
 }
+.post-title a:link,
+.post-title a:visited {
+  color: var(--text);
+}
+.post-title a:hover,
+.post-title a:active {
+  color: var(--link);
+}
 .post-date {
     color: var(--accent-3);
     font-size: 1.6rem;
