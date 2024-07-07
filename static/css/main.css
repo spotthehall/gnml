@@ -176,7 +176,7 @@ main {
   border-bottom: 1px solid var(--background);
 }
 .site-title {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
 }
 .site-title a:link,
 .site-title a:visited {
@@ -191,6 +191,7 @@ main {
     justify-content: space-between;
     align-items: center;
     padding: 0 2.5rem;
+    font-size: 1.6rem;
 }
 .site-nav ul {
     list-style: none;
