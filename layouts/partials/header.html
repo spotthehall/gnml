@@ -4,9 +4,9 @@
         <ul class="nav-menu">
         {{ range .Site.Menus.main }}
             {{ if .Page.Params.redirect_url }}
-            <li class="nav-link"><a href="{{ .Page.Params.redirect_url }}">{{ .Name }}</a></li>
+            <li class="nav-item"><a href="{{ .Page.Params.redirect_url }}">{{ .Name }}</a></li>
             {{ else }}
-            <li class="nav-link"><a href="{{ .URL | relLangURL | safeURL }}">{{ .Name }}</a></li>
+            <li class="nav-item"><a href="{{ .URL | relLangURL | safeURL }}">{{ .Name }}</a></li>
             {{ end }}
         {{ end }}
         </ul>
