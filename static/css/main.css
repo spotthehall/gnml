@@ -458,6 +458,9 @@ a.tinylytics_webring {
     width: 100%;
     background: #fff;
     }
+    .site-nav ul {
+      padding-bottom: 2rem;
+    }
     .nav-menu {
         position: fixed;
         left: -100%;
