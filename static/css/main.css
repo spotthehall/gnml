@@ -172,14 +172,12 @@ main {
   max-width: 76rem;
 }
 .header {
-  /* text-align: center; */
-  border-bottom: 1px solid #fff;
+  border-bottom: 1px solid var(--background);
 }
 .site-title {
   font-size: 1.8rem;
 }
 .site-nav {
-    /* margin: 2rem 0 5rem; */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -187,12 +185,8 @@ main {
 }
 .site-nav ul {
     list-style: none;
-    padding: 0;
+    padding: 0 2rem;
 }
-/* .site-nav li {
-    display: inline-block;
-    margin: 0 1.2rem;
-} */
 .hamburger {
     display: none;
 }
@@ -203,7 +197,7 @@ main {
     margin: 4px auto;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
-    background-color: #101010;
+    background-color: var(--text);
 }
 .nav-menu {
     display: flex;
