@@ -51,9 +51,6 @@ body {
     font-family: var(--sans-serif-font);
     font-size: 1.8rem;
     line-height: 1.6;
-    margin: 0 auto;
-    padding: 2rem;
-    max-width: 76rem;
     -moz-font-feature-settings:    "kern" 1; 
     -ms-font-feature-settings:     "kern" 1; 
     -o-font-feature-settings:      "kern" 1; 
@@ -168,14 +165,18 @@ input[type=search] {
     font-size: 1.8rem;
     height: auto;
 }
-
+main {
+  margin: 0 auto;
+  padding: 2rem;
+  max-width: 76rem;
+}
 .header {
   /* text-align: center; */
   border-bottom: 1px solid #fff;
 }
-/* .site-title {
-  font-size: 2.5rem;
-} */
+.site-title {
+  font-size: 1.8rem;
+}
 .site-nav {
     /* margin: 2rem 0 5rem; */
     display: flex;
