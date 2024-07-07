@@ -170,7 +170,7 @@ input[type=search] {
 main {
   margin: 0 auto;
   padding: 2rem;
-  max-width: 76rem;
+  max-width: 75rem;
 }
 .header {
   border-bottom: 1px solid var(--background);
