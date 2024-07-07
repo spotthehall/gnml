@@ -190,7 +190,7 @@ main {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 2rem;
+    padding: 0 2.5rem;
 }
 .site-nav ul {
     list-style: none;
