@@ -466,6 +466,7 @@ a.tinylytics_webring {
     top: 0;
     width: 100%;
     background: #fff;
+    z-index: 10000;
     }
     .site-nav ul {
       padding-bottom: 2rem;
@@ -486,7 +487,7 @@ a.tinylytics_webring {
         left: 0;
     }
     .nav-item {
-        margin: 2.5rem 0;
+        margin: 2rem 0;
     }
     .hamburger {
         display: block;
