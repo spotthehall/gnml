@@ -466,6 +466,7 @@ a.tinylytics_webring {
     position: sticky;
     top: 0;
     width: 100%;
+    padding-top: .75rem;
     background: #fff;
     z-index: 10000;
     }
