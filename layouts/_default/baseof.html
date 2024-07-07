@@ -3,10 +3,8 @@
     {{ partial "head.html" . }}
     <body>
         {{ partial "header.html" . }}
-        <main>
         {{ block "main" . }}{{ end }}
         {{ partial "footer.html" . }}
-        </main>
         {{ range $filename := .Site.Params.plugins_html }}
         {{ partial $filename $ }}
         {{ end }}
