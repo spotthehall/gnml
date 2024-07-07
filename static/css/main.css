@@ -190,7 +190,7 @@ main {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 2.5rem;
+    padding: 1rem 4rem;
     font-size: 1.6rem;
 }
 .site-nav ul {
@@ -473,6 +473,9 @@ a.tinylytics_webring {
     padding-top: .75rem;
     background: #fff;
     z-index: 10000;
+    }
+    .site-nav {
+      padding: 1rem 2.5rem;
     }
     .site-title,
     .site-nav {
