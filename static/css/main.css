@@ -474,6 +474,10 @@ a.tinylytics_webring {
     background: #fff;
     z-index: 10000;
     }
+    .site-title,
+    .site-nav {
+      font-size: 1.8rem;
+    }
     .site-nav ul {
       padding-bottom: 2rem;
     }
