@@ -51,6 +51,7 @@ body {
     font-family: var(--sans-serif-font);
     font-size: 1.8rem;
     line-height: 1.6;
+    width: 100%;
     -moz-font-feature-settings:    "kern" 1; 
     -ms-font-feature-settings:     "kern" 1; 
     -o-font-feature-settings:      "kern" 1; 
