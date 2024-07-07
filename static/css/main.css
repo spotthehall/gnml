@@ -483,6 +483,8 @@ a.tinylytics_webring {
     }
     .site-nav ul {
       padding-bottom: 2rem;
+      height: 100vh;
+      justify-content: start;
     }
     .nav-menu {
         position: fixed;
