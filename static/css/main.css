@@ -177,6 +177,14 @@ main {
 .site-title {
   font-size: 1.8rem;
 }
+.site-title a:link,
+.site-title a:visited {
+  color: var(--text);
+}
+.site-title a:hover,
+.site-title a:active {
+  color: var(--link);
+}
 .site-nav {
     display: flex;
     justify-content: space-between;
@@ -205,7 +213,7 @@ main {
     align-items: center;
 }
 .nav-item {
-    margin-left: 5rem;
+    margin-left: 3rem;
 }
 
 article {
