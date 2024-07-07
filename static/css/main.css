@@ -193,7 +193,7 @@ main {
 }
 .site-nav ul {
     list-style: none;
-    padding: 0 2rem;
+    padding: 0;
 }
 .hamburger {
     display: none;
