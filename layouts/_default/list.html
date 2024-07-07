@@ -1,5 +1,5 @@
 {{ define "main" }}
-    <main class="test">
+    <main>
         {{ $paginator := .Paginate (where .Site.Pages.ByDate.Reverse "Type" "post") (index .Site.Params "archive-paginate" | default 25) }}
         {{ range $paginator.Pages  }}
         <article>
