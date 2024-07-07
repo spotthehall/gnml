@@ -233,6 +233,10 @@ single article {
     padding-bottom: 0;
 }
 
+.page-title,
+.post-title {
+  margin-top: 1rem;
+}
 .post-title,
 .btm-margin {
     margin-bottom: -10px;
