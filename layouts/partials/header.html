@@ -9,6 +9,10 @@
             <li class="nav-item"><a href="{{ .URL | relLangURL | safeURL }}">{{ .Name }}</a></li>
             {{ end }}
         {{ end }}
+        {{ if ne (.Site.Params.wane_mastodon | default "") "" }}<li class="nav-item"><a href="{{ .Site.Params.wane_mastodon }}" target="_blank">Mastodon</a></li>{{ end }}
+        {{ if ne (.Site.Params.wane_microblog | default "") "" }}<li class="nav-item"><a href="{{ .Site.Params.wane_microblog }}" target="_blank">Micro.blog</a></li>{{ end }}
+        {{ if ne (.Site.Params.wane_github | default "") "" }}<li class="nav-item"><a href="{{ .Site.Params.wane_github }}" target="_blank">Github</a></li>{{ end }}
+        
         </ul>
         <div class="hamburger">
             <span class="bar"></span>
