@@ -532,4 +532,7 @@ a.tinylytics_webring {
         -webkit-transform: translateY(-8px) rotate(-45deg);
         transform: translateY(-8px) rotate(-45deg);
     }
+    .social {
+      display: none;
+    }
 }
