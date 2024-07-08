@@ -9,9 +9,10 @@
             <li class="nav-item"><a href="{{ .URL | relLangURL | safeURL }}">{{ .Name }}</a></li>
             {{ end }}
         {{ end }}
-        {{ if ne (.Site.Params.wane_mastodon | default "") "" }}<li class="nav-item"><a href="{{ .Site.Params.wane_mastodon }}" target="_blank">Mastodon</a></li>{{ end }}
-        {{ if ne (.Site.Params.wane_microblog | default "") "" }}<li class="nav-item"><a href="{{ .Site.Params.wane_microblog }}" target="_blank">Micro.blog</a></li>{{ end }}
-        {{ if ne (.Site.Params.wane_github | default "") "" }}<li class="nav-item"><a href="{{ .Site.Params.wane_github }}" target="_blank">Github</a></li>{{ end }}
+        {{ if ne (.Site.Params.wane_microblog | default "") "" }}<li class="nav-item social"><a href="{{ .Site.Params.wane_microblog }}"><i class="fa-brands fa-microblog"></i></a></li>{{ end }}
+        {{ if ne (.Site.Params.wane_github | default "") "" }}<li class="nav-item social"><a href="{{ .Site.Params.wane_github }}"><i class="fa-brands fa-github"></i></a></li>{{ end }}
+        {{ if ne (.Site.Params.wane_mastodon | default "") "" }}<li class="nav-item social"><a href="{{ .Site.Params.wane_mastodon }}"><i class="fa-brands fa-mastodon"></i></a></li>{{ end }}
+        
         
         </ul>
         <div class="hamburger">
