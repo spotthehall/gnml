@@ -170,7 +170,7 @@ input[type=search] {
 main {
   margin: 0 auto;
   padding: 2rem;
-  max-width: 75rem;
+  max-width: 70rem;
 }
 .header {
   border-bottom: 1px solid var(--background);
@@ -264,6 +264,14 @@ article ol li {
     margin-bottom:5px;
 }
 
+
+#list_results p {
+  margin: 5rem 0;
+}
+#list_results p:first-of-type {
+  margin-top: 3rem;
+}
+
 ul.photo-grid-container {
     list-style: none;
     padding: 0;
@@ -301,6 +309,10 @@ ul.photo-grid-container li:last-child {
     ul.photo-grid-container li {
         flex-basis: 50%;
     }
+}
+
+.microblog_narration_button svg {
+  display: inline;
 }
 
 .tinylytics_kudos {
@@ -430,8 +442,9 @@ main.archive .entry p {
 footer {
     color: var(--accent-3);
     font-size: 1.6rem;
-    padding: 0.5rem 0 3rem 0;
+    padding: 0.5rem 2rem 3rem 2rem;
     text-align: center;
+    max-width: 70rem;
 }
 footer p {
     margin: 0;
