@@ -12,7 +12,7 @@
 				{{- if and .Site.Params.photos_only_microblog (ne .Title "") -}}
 					{{- .Scratch.Set "include_photo" false -}}
 				{{- end -}}
-		  		
+				  
 				{{- if .Scratch.Get "include_photo" -}}
 					{{- if .Params.photos -}}
 						<li>

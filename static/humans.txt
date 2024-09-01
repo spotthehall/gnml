@@ -2,14 +2,14 @@
 
 Name: Jim Mitchell
 Web: https://jimmitchell.dev
-Contact: hello [at] jim mitchell dot dev
+Contact: hello [at] jimmitchell [dot] dev
 Micro.blog: @jimmitchell
-Mastodon: social.lol/@jim
+Mastodon: mastodon.social/@jimmitchell
 From: Huntington Beach, CA, USA
 
 /* SITE */
 
 Standards: HTML5, CSS3
-Software: Hugo, Git, VSCode, BBEdit, Pixelmator Pro
-Design Repo: https://github.com/jimmitchell/nominal
+Software: Hugo, Git, Nova, BBEdit, Pixelmator Pro
+Design Repo: https://github.com/jimmitchell/wane
 Hosted by: Micro.blog

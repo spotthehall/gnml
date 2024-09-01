@@ -1,10 +1,10 @@
 <style>
 	a {
 		color: #00a1e0;
-        text-decoration: none;
+		text-decoration: none;
 	}
 	a:hover,
-    a:active {
+	a:active {
 		text-decoration: underline;
 	}
 	img {
@@ -13,12 +13,12 @@
 		height: auto;
 		max-width: 1000px;
 	}
-    .body {
-        font-family: system-ui, sans-serif;
-        font-size: 18px;
-        background: #fff;
-        color: #333;
-    }
+	.body {
+		font-family: system-ui, sans-serif;
+		font-size: 18px;
+		background: #fff;
+		color: #333;
+	}
 	.intro {
 		border-bottom: 1px solid #666;
 		padding-bottom: 20px;
@@ -35,7 +35,7 @@
 </style>
 
 <div class="body">
-    
+	
 	<h2>{{ .Site.Title }}</h2>
 
 	{{ if gt (len .Intro) 0 }}
