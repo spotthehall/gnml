@@ -12,6 +12,17 @@
         {{ if and (templates.Exists "partials/tinylytics.html") (.Site.Params.show_kudos) (ne (.Site.Params.site_id | default "") "") }}
         <p><button id="al" aria-label="Kudo Button" class="tinylytics_kudos" data-path="{{ .Page.RelPermalink }}"></button></p>
         {{ end }}
+        
+        {{ if isset .Params "categories" }}
+            <p>
+            {{ range $index, $category := .Params.categories }}
+                {{ $href := printf "/categories/%s" (urlize $category) | absURL }}
+                {{ if gt $index 0 }}<!--<span class="seperator">, </span>--> {{ end }}
+                <a href="{{ $href }}" class="category">{{ $category }}</a>
+            {{ end }}
+            </p>
+        {{ end }}
+        
     </article>
     
     {{ if .Site.Params.include_conversation }}

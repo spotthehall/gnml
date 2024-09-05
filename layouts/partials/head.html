@@ -4,18 +4,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
   <meta name="view-transition" content="same-origin" />
   <title>
-  {{- block "title" . -}}
-      {{- .Site.Title -}}
-      {{- if and .Title (ne .Title .Site.Title) }}
-      | {{ .Title }}
-      {{- end -}}
-  {{- end -}}
+    {{- block "title" . -}}
+    {{- .Site.Title -}}
+    {{- if and .Title (ne .Title .Site.Title) }}
+    | {{ .Title }}
+    {{- end -}}
+    {{- end -}}
   </title>
   <meta name="description" content="{{ .Summary }}">
   <link rel="shortcut icon" href="https://micro.blog/{{ .Site.Author.username }}/favicon.png" type="image/x-icon" />
-
-<link href="https://fonts.cdnfonts.com/css/gt-walsheim-trial" rel="stylesheet">
-
+  <link href="https://fonts.cdnfonts.com/css/gt-walsheim-trial" rel="stylesheet">
   <script src="https://kit.fontawesome.com/16098a8f37.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="{{ "css/prism.css" | relURL }}?{{ .Site.Params.theme_seconds }}">
   <link rel="stylesheet" href="{{ "css/main.css" | relURL }}?{{ .Site.Params.theme_seconds }}">
@@ -23,14 +21,14 @@
   {{ if ne (.Site.Params.wane_link_color | default "") "" }}{{ partialCached "wane.html" . }}{{ end }}
   <link rel="canonical" href="{{ .Permalink }}">
   <link rel="author" href="humans.txt" />
-  
+
   {{ if .RSSLink -}}
   <link href="{{ .RSSLink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
   <link href="{{ "podcast.xml" | absURL }}" rel="alternate" type="application/rss+xml" title="Podcast" />
   <link rel="alternate" type="application/json" title="{{ .Site.Title }}" href="{{ "feed.json" | absURL }}" />
   <link rel="EditURI" type="application/rsd+xml" href="{{ "rsd.xml" | absURL }}" />
   {{ end -}}
-  
+
   <link rel="me" href="https://micro.blog/{{ .Site.Author.username }}" />
   <link rel="authorization_endpoint" href="https://micro.blog/indieauth/auth" />
   <link rel="token_endpoint" href="https://micro.blog/indieauth/token" />

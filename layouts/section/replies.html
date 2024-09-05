@@ -7,10 +7,10 @@
 		{{ range $list }}
 		<article>
 			{{ if .Title }}
-			<h3 class="post-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+			<h3 class="post-title"><a href="{{ .Permalink }}">{{ .Title }} →</a></h3>
 			<p class="post-date">{{ .Date.Format "Monday, January 2, 2006" }}</p>
 			{{ else }}
-			<p class="post-date btm-margin"><a href="{{ .Permalink }}">{{ .Date.Format "Monday, January 2, 2006" }}</a></p>
+			<p class="post-date btm-margin"><a href="{{ .Permalink }}">{{ .Date.Format "Monday, January 2, 2006" }} →</a></p>
 			{{ end }}
 			{{ .Content }}
 		</article>
@@ -23,7 +23,7 @@
 			<h3 class="post-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
 			<p class="post-date">{{ .Date.Format "Monday, January 2, 2006" }}</p>
 			{{ else }}
-			<p class="post-date btm-margin"><a href="{{ .Permalink }}">{{ .Date.Format "Monday, January 2, 2006" }}</a></p>
+			<p class="post-date btm-margin"><a href="{{ .Permalink }}">{{ .Date.Format "Monday, January 2, 2006" }} →</a></p>
 			{{ end }}
 			{{ .Content }}
 		</article>
