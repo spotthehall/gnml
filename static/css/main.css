@@ -85,7 +85,7 @@ body {
   background: var(--background);
   color: var(--text);
   font-family: var(--sans-serif-font);
-  font-size: 1.7rem;
+  font-size: 1.8rem;
   line-height: 1.6;
   width: 100%;
   margin: 0;
@@ -131,21 +131,21 @@ h6 {
 }
 
 h1 {
-  font-size: 2.4rem;
+  font-size: 2.5rem;
 }
 
 h2 {
-  font-size: 2.2rem;
+  font-size: 2.3rem;
 }
 
 h3 {
-  font-size: 1.8rem;
+  font-size: 1.9rem;
 }
 
 h4,
 h5,
 h6 {
-  font-size: 1.7rem;
+  font-size: 1.8rem;
 }
 
 hr {
@@ -242,7 +242,7 @@ input[type=search] {
   border-radius: 6px;
   margin: 4px 1px;
   width: 60%;
-  font-size: 1.7rem;
+  font-size: 1.8rem;
   height: auto;
 }
 
@@ -297,7 +297,7 @@ main {
   padding: .75rem 2rem .5rem 2rem;
   font-size: 1.5rem;
   margin: 0 auto;
-  max-width: 70rem;
+  max-width: 90rem;
 }
 
 .site-nav ul {
@@ -391,7 +391,7 @@ article ol li {
 
 .category {
   color: var(--accent-3);
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   display: inline-block;
   line-height: 1.8;
   padding: 0 8px;
@@ -475,7 +475,7 @@ ul.photo-grid-container li:last-child {
   color: var(--accent-3);
   border: 1px solid var(--accent-2);
   background-color: var(--accent-1);
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   border-radius: 6px;
   padding: 2px 8px;
   display: inline-block;
