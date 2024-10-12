@@ -1,11 +1,12 @@
 :root {
-  --background: #fff;
-  --text: #666;
-  --link: #009ddc;
-  --accent-1: #f8f8f8;
-  --accent-2: #dfdfdf;
-  --accent-3: #9c9c9c;
-  --sans-serif-font: -apple-system, system-ui, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --background: #ffffff;
+  --text: #42444a;
+  --link: #0d88d8;
+  --link-color-hover: #101115;
+  --accent-1: #f6f6f6;
+  --accent-2: #d4d4d6;
+  --accent-3: #93959a;
+  --sans-serif-font: 'Proxima Nova', -apple-system, system-ui, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif;
   --mono-space-font: ui-monospace, SFMono-Regular, ui-monospace, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
   --font-weight-normal: 400;
   --font-weight-bold: 700;
@@ -16,6 +17,8 @@
   :root {
     --background: #282c35;
     --text: #f8f8f8;
+    --link-color: #57aae6;
+    --link-color-hover: #ffffff;
     --accent-1: #3d4149;
     --accent-2: #53565d;
     --accent-3: #d4d4d6;

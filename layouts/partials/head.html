@@ -14,10 +14,10 @@
   </title>
   <meta name="description" content="{{ .Summary }}">
   <link rel="shortcut icon" href="https://micro.blog/{{ .Site.Author.username }}/favicon.png" type="image/x-icon" />
+  <link rel="stylesheet" href="{{ "css/proxima-nova.min.css" | relURL }}?{{ .Site.Params.theme_seconds }}">
   <link rel="stylesheet" href="{{ "css/prism.css" | relURL }}?{{ .Site.Params.theme_seconds }}">
   <link rel="stylesheet" href="{{ "css/main.css" | relURL }}?{{ .Site.Params.theme_seconds }}">
   <link rel="stylesheet" href="{{ "custom.css" | relURL }}?{{ .Site.Params.theme_seconds }}">
-  {{ if ne (.Site.Params.wane_link_color | default "") "" }}{{ partialCached "wane.html" . }}{{ end }}
   <link rel="canonical" href="{{ .Permalink }}">
   <link rel="author" href="humans.txt" />
 
