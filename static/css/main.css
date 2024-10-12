@@ -10,7 +10,6 @@
   --mono-space-font: ui-monospace, SFMono-Regular, ui-monospace, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
   --font-weight-normal: 400;
   --font-weight-bold: 700;
-  --highlight: rgba(var(--link), 0.30);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -102,11 +101,11 @@ body {
 }
 
 ::-moz-selection {
-  background: var(--highlight);
+  background: var(--accent-2);
 }
 
 ::selection {
-  background: var(--highlight);
+  background: var(--accent-2);
 }
 
 a {
