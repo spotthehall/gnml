@@ -389,7 +389,6 @@ article ol li {
 }
 
 .category {
-  color: var(--accent-3);
   font-size: 1.4rem;
   display: inline-block;
   line-height: 2;
@@ -397,6 +396,11 @@ article ol li {
   background: var(--accent-1);
   border: 1px solid var(--accent-2);
   border-radius: 6px;
+}
+
+.category:link,
+.category:visited {
+  color: var(--accent-3);
 }
 
 .category:hover,
