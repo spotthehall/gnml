@@ -407,6 +407,7 @@ article ol li {
 .category:active {
   color: var(--background);
   background: var(--text);
+  border-color: var(--text);
   text-decoration: none;
 }
 
