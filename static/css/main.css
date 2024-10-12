@@ -255,7 +255,7 @@ main {
 }
 
 .u-photo {
-  border-radius: 50%;
+  border-radius: 6px;
   display: inline;
   margin-right: 8px;
   margin-top: -3px;
@@ -512,7 +512,7 @@ ul.photo-grid-container li:last-child {
   vertical-align: middle;
   width: 30px;
   height: auto;
-  border-radius: 50%;
+  border-radius: 6px;
   max-width: 30px !important;
   display: inline-block;
   margin-top: -2px;
