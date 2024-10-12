@@ -5,24 +5,20 @@
   --accent-1: #f8f8f8;
   --accent-2: #dfdfdf;
   --accent-3: #9c9c9c;
-  --sans-serif-font: 'GT Walsheim Trial', -apple-system, system-ui, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --sans-serif-font: -apple-system, system-ui, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif;
   --mono-space-font: ui-monospace, SFMono-Regular, ui-monospace, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
   --font-weight-normal: 400;
-  --font-weight-bold: 600;
+  --font-weight-bold: 700;
   --highlight: rgba(var(--link), 0.30);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #252525;
+    --background: #282c35;
     --text: #f8f8f8;
-    --accent-1: #2c2c2c;
-    --accent-2: #4c4c4c;
-    --accent-3: #d9d9d9;
-  }
-
-  .header {
-    box-shadow: 0 0 6px rgba(0, 0, 0, .7) !important;
+    --accent-1: #3d4149;
+    --accent-2: #53565d;
+    --accent-3: #d4d4d6;
   }
 }
 
@@ -86,7 +82,7 @@ body {
   color: var(--text);
   font-family: var(--sans-serif-font);
   font-size: 1.8rem;
-  line-height: 1.6;
+  line-height: 1.6111;
   width: 100%;
   margin: 0;
   -moz-font-feature-settings: "kern" 1;
@@ -131,15 +127,15 @@ h6 {
 }
 
 h1 {
-  font-size: 2.5rem;
+  font-size: 2.6rem;
 }
 
 h2 {
-  font-size: 2.3rem;
+  font-size: 2.4rem;
 }
 
 h3 {
-  font-size: 1.9rem;
+  font-size: 2rem;
 }
 
 h4,
@@ -241,7 +237,7 @@ input[type=search] {
   border: 1px solid var(--accent-3);
   border-radius: 6px;
   margin: 4px 1px;
-  width: 60%;
+  width: 100%;
   font-size: 1.8rem;
   height: auto;
 }
@@ -249,21 +245,17 @@ input[type=search] {
 main {
   margin: 0 auto;
   padding: 2rem;
-  max-width: 70rem;
-  margin-top: 10rem;
+  max-width: 68rem;
 }
 
 .header {
-  position: fixed;
-  top: 0;
   width: 100%;
   background: var(--background);
   z-index: 10000;
-  box-shadow: 0 0 4px rgba(0, 0, 0, .1);
 }
 
 .u-photo {
-  border-radius: 6px;
+  border-radius: 50%;
   display: inline;
   margin-right: 8px;
   margin-top: -3px;
@@ -271,7 +263,7 @@ main {
 }
 
 .site-title {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
 }
 
 .site-title a {
@@ -295,9 +287,9 @@ main {
   justify-content: space-between;
   align-items: center;
   padding: .75rem 2rem .5rem 2rem;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   margin: 0 auto;
-  max-width: 90rem;
+  max-width: 100rem;
 }
 
 .site-nav ul {
@@ -311,7 +303,7 @@ main {
 
 .bar {
   display: block;
-  width: 14px;
+  width: 16px;
   height: 2px;
   margin: 3px auto;
   -webkit-transition: all 0.3s ease-in-out;
@@ -378,10 +370,9 @@ single article {
 }
 
 article img {
-  width: 100%;
+  max-width: 100%;
   height: auto;
-  margin: 2rem auto;
-  border-radius: 6px;
+  margin: 3rem auto;
 }
 
 article ul li,
@@ -391,9 +382,9 @@ article ol li {
 
 .category {
   color: var(--accent-3);
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   display: inline-block;
-  line-height: 1.8;
+  line-height: 2;
   padding: 0 8px;
   background: var(--accent-1);
   border: 1px solid var(--accent-2);
@@ -427,11 +418,11 @@ ul.photo-grid-container {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 5rem;
-  margin: 0 -4px 5rem -4px;
+  margin: 0 -3px 5rem -3px;
 }
 
 ul.photo-grid-container li {
-  height: 170px;
+  height: 180px;
   flex-basis: 33.3334%;
   cursor: pointer;
   position: relative;
@@ -444,8 +435,7 @@ ul.photo-grid-container li img {
   width: 100%;
   height: 100%;
   vertical-align: middle;
-  border: 4px solid transparent;
-  border-radius: 8px;
+  border: 3px solid transparent;
 }
 
 ul.photo-grid-container li img:hover {
@@ -522,7 +512,7 @@ ul.photo-grid-container li:last-child {
   vertical-align: middle;
   width: 30px;
   height: auto;
-  border-radius: 6px;
+  border-radius: 50%;
   max-width: 30px !important;
   display: inline-block;
   margin-top: -2px;
@@ -554,6 +544,7 @@ ul.photo-grid-container li:last-child {
   width: 100%;
   border-radius: 6px;
   padding: 8px;
+  z-index: 0;
 }
 
 .microblog_reply_textarea textarea:disabled,
@@ -616,7 +607,7 @@ footer {
   font-size: 1.6rem;
   padding: 0.5rem 2rem 3rem 2rem;
   text-align: center;
-  max-width: 70rem;
+  max-width: 68rem;
   margin: 0 auto;
 }
 
@@ -659,10 +650,12 @@ a.tinylytics_webring {
 @media only screen and (max-width: 768px) {
   body {
     overscroll-behavior: contain;
+    line-height: 1.5111;
   }
 
   .site-nav {
     font-size: 2rem;
+    background: var(--background);
   }
 
   .site-nav ul {
@@ -674,7 +667,7 @@ a.tinylytics_webring {
   .nav-menu {
     position: fixed;
     left: -100%;
-    top: 4rem;
+    top: 0;
     flex-direction: column;
     background-color: var(--background);
     width: 100%;
@@ -682,10 +675,14 @@ a.tinylytics_webring {
     text-align: center;
     transition: 0.3s;
     height: 100dvmax;
+    z-index: 10000;
   }
 
   .nav-menu.active {
     left: 0;
+    top: 0;
+    margin: 0;
+    padding: 6rem 0;
   }
 
   .nav-item {
@@ -695,6 +692,12 @@ a.tinylytics_webring {
   .hamburger {
     display: block;
     cursor: pointer;
+    z-index: 10010;
+  }
+
+  .hamburger.active {
+    position: fixed;
+    right: 20px;
   }
 
   .hamburger.active .bar:nth-child(2) {
@@ -709,9 +712,5 @@ a.tinylytics_webring {
   .hamburger.active .bar:nth-child(3) {
     -webkit-transform: translateY(-5px) rotate(-45deg);
     transform: translateY(-5px) rotate(-45deg);
-  }
-
-  main {
-    margin-top: 9rem;
   }
 }

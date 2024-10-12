@@ -1,7 +1,7 @@
 {
-	"version": "2.1.2",
+	"version": "2.2.0",
 	"title": "Wane",
-	"description": "A really simple Micro.blog theme.",
+	"description": "A stupid simple Micro.blog theme.",
 	"fields": [
 		{
 			"field": "params.wane_link_color",
