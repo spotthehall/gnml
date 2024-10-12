@@ -2,7 +2,7 @@
   --background: #ffffff;
   --text: #42444a;
   --link: #0d88d8;
-  --link-color-hover: #101115;
+  --link-hover: #101115;
   --accent-1: #f6f6f6;
   --accent-2: #d4d4d6;
   --accent-3: #93959a;
@@ -17,8 +17,8 @@
   :root {
     --background: #282c35;
     --text: #f8f8f8;
-    --link-color: #57aae6;
-    --link-color-hover: #ffffff;
+    --link: #57aae6;
+    --link-hover: #ffffff;
     --accent-1: #3d4149;
     --accent-2: #53565d;
     --accent-3: #d4d4d6;
@@ -110,13 +110,18 @@ body {
 }
 
 a {
-  color: var(--link);
   text-decoration: none;
+}
+
+a:link,
+a:visited {
+  color: var(--link);
 }
 
 a:hover,
 a:active {
   text-decoration: underline;
+  color: var(--link-hover);
 }
 
 h1,
@@ -630,7 +635,7 @@ footer p {
 
 .social a:hover,
 .social a:active {
-  color: var(--link-color-hover);
+  color: var(--link-hover);
 }
 
 .tiny_webring {
