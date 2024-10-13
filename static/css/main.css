@@ -500,7 +500,7 @@ ul.photo-grid-container li:last-child {
 
 .microblog_post {
   margin-bottom: 1rem;
-  padding: 2.5rem 2.5rem 2.3rem 2.5rem;
+  padding: 2.3rem 2rem;
   border: 1px solid var(--accent-2);
   border-radius: 6px;
   background: var(--accent-1);
