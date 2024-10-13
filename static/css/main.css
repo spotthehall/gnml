@@ -259,6 +259,7 @@ main {
   width: 100%;
   background: var(--background);
   z-index: 10000;
+  margin-top: 1rem;
 }
 
 .u-photo {
@@ -681,6 +682,10 @@ a.tinylytics_webring {
   body {
     overscroll-behavior: contain;
     line-height: 1.5111;
+  }
+  
+  .header {
+    margin-top: 0;
   }
 
   .site-nav {
