@@ -380,6 +380,7 @@ article img {
   max-width: 100%;
   height: auto;
   margin: 3rem auto;
+  border-radius: 6px;
 }
 
 article ul li,
