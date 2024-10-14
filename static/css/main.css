@@ -356,6 +356,7 @@ single article {
 
 .btm-margin {
   margin-bottom: -10px;
+  font-weight: var(--font-weight-bold);
 }
 
 .post-title {
@@ -375,7 +376,6 @@ single article {
 .post-date {
   color: var(--accent-3);
   font-size: 1.6rem;
-  font-weight: var(--font-weight-bold);
 }
 
 article img {
