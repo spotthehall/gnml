@@ -17,8 +17,8 @@
             <p>
             {{ range $index, $category := .Params.categories }}
                 {{ $href := printf "/categories/%s" (urlize $category) | absURL }}
-                {{ if gt $index 0 }}<!--<span class="seperator">, </span>--> {{ end }}
-                <a href="{{ $href }}" class="category">{{ $category }}</a>
+                {{ if gt $index 0 }}<span class="seperator">, </span>{{ end }}
+                <a href="{{ $href }}" class="catexgory">#{{ $category }}</a>
             {{ end }}
             </p>
         {{ end }}
