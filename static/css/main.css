@@ -393,7 +393,7 @@ article ol li {
 .category {
   font-size: 1.4rem;
   display: inline-block;
-  line-height: 1.6;
+  line-height: 2;
   padding: 0 12px;
   background: var(--accent-1);
   border: 1px solid var(--accent-2);
