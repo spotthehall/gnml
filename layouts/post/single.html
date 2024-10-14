@@ -9,10 +9,6 @@
         {{ end }}
         {{ with .Params.audio }}<script type="text/javascript" src="https://micro.blog/narration.js?url={{ . }}"></script>{{ end }}
         {{ .Content }}
-        {{ if and (templates.Exists "partials/tinylytics.html") (.Site.Params.show_kudos) (ne (.Site.Params.site_id | default "") "") }}
-        <p><button id="al" aria-label="Kudo Button" class="tinylytics_kudos" data-path="{{ .Page.RelPermalink }}"></button></p>
-        {{ end }}
-        
         {{ if isset .Params "categories" }}
             <p>
             {{ range $index, $category := .Params.categories }}
@@ -21,6 +17,10 @@
                 <a href="{{ $href }}" class="catexgory">#{{ $category }}</a>
             {{ end }}
             </p>
+        {{ end }}
+
+        {{ if and (templates.Exists "partials/tinylytics.html") (.Site.Params.show_kudos) (ne (.Site.Params.site_id | default "") "") }}
+        <p><button id="al" aria-label="Kudo Button" class="tinylytics_kudos" data-path="{{ .Page.RelPermalink }}"></button></p>
         {{ end }}
         
     </article>
