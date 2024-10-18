@@ -6,11 +6,11 @@
   --accent-1: #f6f6f6;
   --accent-2: #d4d4d6;
   --accent-3: #93959a;
-  --sans-serif-font: -apple-system, system-ui, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --sans-serif-font: 'Proxima Nova', -apple-system, system-ui, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif;
   --mono-space-font: ui-monospace, SFMono-Regular, ui-monospace, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
   --font-weight-normal: 400;
   --font-weight-bold: 700;
-  --site-width: 74rem;
+  --site-width: 72rem;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -160,7 +160,7 @@ hr {
 }
 
 blockquote {
-  border-left: 3px solid var(--link);
+  border-left: 1px solid var(--accent-2);
   color: var(--accent-3);
   margin: 2rem 0;
   padding: 0 2rem;
@@ -269,7 +269,6 @@ main {
   margin-right: 8px;
   margin-top: -3px;
   vertical-align: middle;
-  display: none;
 }
 
 .site-title {
@@ -392,15 +391,17 @@ article ol li {
 }
 
 .category {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   display: inline-block;
+/*
   line-height: 2;
   padding: 0 12px;
   background: var(--accent-1);
   border: 1px solid var(--accent-2);
   border-radius: 6px;
+*/
 }
-
+/*
 .category:link,
 .category:visited {
   color: var(--accent-3);
@@ -413,7 +414,7 @@ article ol li {
   border-color: var(--text);
   text-decoration: none;
 }
-
+*/
 #list_results p {
   margin: 5rem 0;
 }
