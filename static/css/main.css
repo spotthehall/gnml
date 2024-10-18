@@ -249,6 +249,7 @@ input[type=search] {
   width: 100%;
   font-size: 1.8rem;
   height: auto;
+  color: var(--text);
 }
 
 input[type=email]:active,
