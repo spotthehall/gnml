@@ -242,12 +242,22 @@ input[type=email],
 input[type=text],
 input[type=search] {
   padding: 5px 8px;
-  border: 1px solid var(--accent-3);
+  background: var(--accent-1);
+  border: 1px solid var(--accent-2);
   border-radius: 6px;
   margin: 4px 1px;
   width: 100%;
   font-size: 1.8rem;
   height: auto;
+}
+
+input[type=email]:active,
+input[type=email]:focus,
+input[type=text]:active,
+input[type=text]:focus,
+input[type=search]:active,
+input[type=search]:focus {
+  border-color: var(--accent-3);
 }
 
 main {
@@ -393,28 +403,8 @@ article ol li {
 .category {
   font-size: 1.6rem;
   display: inline-block;
-/*
-  line-height: 2;
-  padding: 0 12px;
-  background: var(--accent-1);
-  border: 1px solid var(--accent-2);
-  border-radius: 6px;
-*/
-}
-/*
-.category:link,
-.category:visited {
-  color: var(--accent-3);
 }
 
-.category:hover,
-.category:active {
-  color: var(--background);
-  background: var(--text);
-  border-color: var(--text);
-  text-decoration: none;
-}
-*/
 #list_results p {
   margin: 5rem 0;
 }
@@ -543,7 +533,7 @@ ul.photo-grid-container li:last-child {
 
 .microblog_time a,
 .microblog_time a:visited {
-  color: var(--accent-dark2);
+  color: var(--accent-2);
   font-size: 1.6rem;
   text-decoration: none;
 }
