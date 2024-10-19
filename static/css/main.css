@@ -6,7 +6,7 @@
   --accent-1: #f6f6f6;
   --accent-2: #d4d4d6;
   --accent-3: #93959a;
-  --sans-serif-font: 'Proxima Nova', -apple-system, system-ui, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --sans-serif-font: -apple-system, system-ui, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif;
   --mono-space-font: ui-monospace, SFMono-Regular, ui-monospace, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
   --font-weight-normal: 400;
   --font-weight-bold: 700;
@@ -85,7 +85,7 @@ body {
   color: var(--text);
   font-family: var(--sans-serif-font);
   font-size: 1.8rem;
-  line-height: 1.6111;
+  line-height: 1.5;
   width: 100%;
   margin: 0;
   -moz-font-feature-settings: "kern" 1;
