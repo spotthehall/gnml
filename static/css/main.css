@@ -275,7 +275,7 @@ main {
 }
 
 .u-photo {
-  border-radius: 6px;
+  border-radius: 50%;
   display: inline;
   margin-right: 8px;
   margin-top: -3px;
@@ -476,7 +476,7 @@ article ol li {
   vertical-align: middle;
   width: 30px;
   height: auto;
-  border-radius: 6px;
+  border-radius: 50%;
   max-width: 30px !important;
   display: inline-block;
   margin-top: -2px;
@@ -622,7 +622,7 @@ a.tinylytics_webring {
 }
 
 .tinylytics_webring_avatar {
-  border-radius: 6px;
+  border-radius: 50%;
   width: 24px;
   height: auto;
   vertical-align: middle;
