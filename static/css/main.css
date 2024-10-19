@@ -420,50 +420,6 @@ article ol li {
   margin-bottom: 4rem;
 }
 
-ul.photo-grid-container {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  flex-wrap: wrap;
-  margin-bottom: 5rem;
-  margin: 0 -3px 5rem -3px;
-}
-
-ul.photo-grid-container li {
-  height: 180px;
-  flex-basis: 33.3334%;
-  cursor: pointer;
-  position: relative;
-  margin-bottom: 0;
-}
-
-ul.photo-grid-container li img {
-  margin: 0;
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
-  vertical-align: middle;
-  border: 3px solid transparent;
-}
-
-ul.photo-grid-container li img:hover {
-  -moz-filter: brightness(70%);
-  -webkit-filter: brightness(70%);
-  filter: brightness(70%);
-  transition: ease-in-out 0.25s;
-}
-
-ul.photo-grid-container li:last-child {
-  flex-grow: 10;
-  height: 0;
-}
-
-@media only screen and (max-width: 650px) {
-  ul.photo-grid-container li {
-    flex-basis: 50%;
-  }
-}
-
 .microblog_narration_button svg {
   display: inline;
 }
@@ -473,7 +429,7 @@ ul.photo-grid-container li:last-child {
   color: var(--accent-3);
   border: 1px solid var(--accent-2);
   background-color: var(--accent-1);
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   border-radius: 6px;
   padding: 2px 8px;
   display: inline-block;
@@ -576,9 +532,11 @@ ul.photo-grid-container li:last-child {
 
 .info {
   background-color: var(--accent-1);
-  border-left: 3px solid var(--link);
+  /*border-left: 3px solid var(--link);*/
   color: var(--text);
-  padding: 16px 24px;
+  padding: 2rem 3rem;
+  border-radius: 1.2rem;
+  text-align: center;
 }
 
 main.archive .entry p>img {
