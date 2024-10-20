@@ -309,7 +309,7 @@ main {
   padding: .75rem 2rem .5rem 2rem;
   font-size: 1.6rem;
   margin: 0 auto;
-  max-width: var(--site-width);
+  max-width: 100rem;
 }
 
 .site-nav ul {
