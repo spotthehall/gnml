@@ -172,10 +172,18 @@ table {
   width: 100%;
 }
 
+th {
+  font-weight: var(--font-weight-bold);
+}
+
+td {
+  font-weight: var(--font-weight-normal);
+}
+
 th,
 td {
   padding: 6px;
-  border: 1px solid var(--accent-3);
+  border: 1px solid var(--accent-2);
   text-align: left;
 }
 
