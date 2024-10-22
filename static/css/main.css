@@ -10,7 +10,7 @@
   --mono-space-font: ui-monospace, SFMono-Regular, ui-monospace, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
   --font-weight-normal: 400;
   --font-weight-bold: 700;
-  --site-width: 74rem;
+  --site-width: 64rem;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -317,7 +317,7 @@ main {
   padding: .75rem 2rem .5rem 2rem;
   font-size: 1.8rem;
   margin: 0 auto;
-  max-width: 110rem;
+  max-width: 96rem;
 }
 
 .site-nav ul {
