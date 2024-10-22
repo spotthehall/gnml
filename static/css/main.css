@@ -201,7 +201,7 @@ tt {
 
 pre {
   background: var(--text);
-  border-radius: 6px;
+  border-radius: 2px;
   color: var(--background);
   line-height: 1.5;
   margin: 2rem 0;
@@ -214,7 +214,7 @@ pre {
 
 code {
   background: var(--text);
-  border-radius: 6px;
+  border-radius: 2px;
   color: var(--background);
   padding: 3px 5px;
 }
@@ -235,7 +235,7 @@ input[type=submit] {
   text-decoration: none;
   margin: 4px 1px;
   cursor: pointer;
-  border-radius: 6px;
+  border-radius: 2px;
 }
 
 input[type=button]:hover,
@@ -252,7 +252,7 @@ input[type=search] {
   padding: 8px 12px;
   background: var(--accent-1);
   border: 1px solid var(--accent-2);
-  border-radius: 6px;
+  border-radius: 2px;
   margin: 4px 1px;
   width: 100%;
   font-size: 1.8rem;
@@ -401,7 +401,7 @@ article img {
   max-width: 100%;
   height: auto;
   margin: 3rem auto;
-  border-radius: 6px;
+  border-radius: 2px;
 }
 
 article ul li,
@@ -438,7 +438,7 @@ article ol li {
   border: 1px solid var(--accent-2);
   background-color: var(--accent-1);
   font-size: 1.4rem;
-  border-radius: 6px;
+  border-radius: 2px;
   padding: 2px 8px;
   display: inline-block;
   margin: 2px 0;
@@ -460,7 +460,7 @@ article ol li {
   margin-bottom: 1rem;
   padding: 2.3rem 2rem;
   border: 1px solid var(--accent-2);
-  border-radius: 6px;
+  border-radius: 2px;
 }
 
 .microblog_conversation .microblog_post {
@@ -515,7 +515,7 @@ article ol li {
   background: var(--accent-1);
   color: var(--text);
   width: 100%;
-  border-radius: 6px;
+  border-radius: 2px;
   padding: 8px;
   z-index: 0;
 }
