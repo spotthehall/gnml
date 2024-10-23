@@ -267,8 +267,8 @@ input[type=text]:active,
 input[type=text]:focus,
 input[type=search]:active,
 input[type=search]:focus,
-input[type=textarea]:active,
-input[type=textarea]:focus {
+textarea:active,
+textarea:focus {
   border-color: var(--accent-3);
   outline: none;
 }
