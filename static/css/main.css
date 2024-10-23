@@ -268,6 +268,7 @@ input[type=text]:focus,
 input[type=search]:active,
 input[type=search]:focus {
   border-color: var(--accent-3);
+  outline: none;
 }
 
 main {
