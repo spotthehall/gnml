@@ -517,7 +517,7 @@ article ol li {
 }
 
 .microblog_reply_textarea textarea {
-  border: 1px solid var(--accent-3);
+  border: 1px solid var(--accent-2);
   background: var(--accent-1);
   color: var(--text);
   width: 100%;
