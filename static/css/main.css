@@ -10,8 +10,8 @@
   --mono-space-font: ui-monospace, SFMono-Regular, ui-monospace, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
   --font-weight-normal: 400;
   --font-weight-bold: 700;
-  --header-width: 96rem;
-  --site-width: 68rem;
+  --header-width: 94rem;
+  --site-width: 64rem;
 }
 
 @media (prefers-color-scheme: dark) {
