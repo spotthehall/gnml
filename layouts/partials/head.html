@@ -22,7 +22,7 @@
   <link rel="stylesheet" href="{{ "css/prism.css" | relURL }}?{{ .Site.Params.theme_seconds }}">
   <link rel="stylesheet" href="{{ "css/main.css" | relURL }}?{{ .Site.Params.theme_seconds }}">
   <link rel="stylesheet" href="{{ "custom.css" | relURL }}?{{ .Site.Params.theme_seconds }}">
-  {{- or .Site.Params.wane_lite_link_color .Site.Params.wane_dark_link_color }}
+  {{- if or (.Site.Params.wane_lite_link_color) (.Site.Params.wane_dark_link_color) }}
   {{ partial "wane-colors.html" . }}
   {{- end }}
   <link rel="canonical" href="{{ .Permalink }}">
