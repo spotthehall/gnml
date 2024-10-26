@@ -22,7 +22,7 @@
   <link rel="stylesheet" href="{{ "css/prism.css" | relURL }}?{{ .Site.Params.theme_seconds }}">
   <link rel="stylesheet" href="{{ "css/main.css" | relURL }}?{{ .Site.Params.theme_seconds }}">
   <link rel="stylesheet" href="{{ "custom.css" | relURL }}?{{ .Site.Params.theme_seconds }}">
-  {{- if ne .Site.Params.mnml_lite_link_color }}
+  {{- if (not (isset .Site.Params "mnml_lite_link_color")) | or (eq .Site.Params.mnml_lite_link_color "") }}
   <style>:root{--link: {{ .Site.Params.mnml_lite_link_color }};}</style>
   {{- end }}
   {{- if ne .Site.Params.mnml_dark_link_color }}
