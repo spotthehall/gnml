@@ -3,7 +3,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
   <meta name="view-transition" content="same-origin" />
-  <meta name="fediverse:creator" content="@jim@social.lol" />
+  {{- if .Site.Params.fediverse_creator }}
+  <meta name="fediverse:creator" content="{{ .Site.Params.fediverse_creator }}" />
+  {{- end }}
   <title>
     {{- block "title" . -}}
     {{- .Site.Title -}}
@@ -14,16 +16,15 @@
   </title>
   <meta name="description" content="{{ .Summary }}">
   <link rel="shortcut icon" href="https://micro.blog/{{ .Site.Author.username }}/favicon.png" type="image/x-icon" />
-  <link rel="preload" href="/fonts/GT-W-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous"/>
-  <link rel="preload" href="/fonts/GT-W-Regular-Oblique.woff2" as="font" type="font/woff2" crossorigin="anonymous"/>
-  <link rel="preload" href="/fonts/GT-W-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous"/>
-  <link rel="preload" href="/fonts/GT-W-Medium-Oblique.woff2" as="font" type="font/woff2" crossorigin="anonymous"/>
-  <link rel="preload" href="/fonts/GT-W-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous"/>
-  <link rel="preload" href="/fonts/GT-W-Bold-Oblique.woff2" as="font" type="font/woff2" crossorigin="anonymous"/>
+  {{ partial "font-preload.html" . }}
   <link rel="stylesheet" href="{{ "css/gtw.css" | relURL }}?{{ .Site.Params.theme_seconds }}">
+  <link rel="stylesheet" href="{{ "css/fa.min.css" | relURL }}?{{ .Site.Params.theme_seconds }}">
   <link rel="stylesheet" href="{{ "css/prism.css" | relURL }}?{{ .Site.Params.theme_seconds }}">
   <link rel="stylesheet" href="{{ "css/main.css" | relURL }}?{{ .Site.Params.theme_seconds }}">
   <link rel="stylesheet" href="{{ "custom.css" | relURL }}?{{ .Site.Params.theme_seconds }}">
+  {{- or .Site.Params.wane_lite_link_color .Site.Params.wane_dark_link_color }}
+  {{ partial "wane-colors.html" . }}
+  {{- end }}
   <link rel="canonical" href="{{ .Permalink }}">
   <link rel="author" href="humans.txt" />
   {{- if .RSSLink }}

@@ -1,12 +1,23 @@
 {
-	"version": "2.3.0",
+	"version": "3.0.0",
 	"title": "Wane",
-	"description": "A stupidly simple Micro.blog theme.",
+	"description": "A minimal Micro.blog theme.",
 	"fields": [
 		{
-			"field": "params.wane_link_color",
-			"label": "Link color",
+			"field": "params.wane_lite_link_color",
+			"label": "Light mode link color",
 			"type": "color"
+		},
+		{
+			"field": "params.wane_dark_link_color",
+			"label": "Dark mode link color",
+			"type": "color"
+		},
+		{
+			"field": "params.wane_fediverse_creator",
+			"label": "Fediverse creator",
+			"type": "text",
+			"placeholder": "Enter your Mastodon username."
 		}
 	]
 }
