@@ -4,7 +4,7 @@
 		<h2 class="page-title">{{ .Title }}</h2>
 		{{- range (.Site.RegularPages.GroupByDate "January 2006") }}
 			<h3 class="archive-range">{{ .Key }}</h3>
-			{{- range (where .Site.RegularPages "Type" "post")}}
+			{{- range (where .RegularPages "Type" "post")}}
 			<p class="post-date"><a href="{{ .Permalink }}">{{ .Date.Format "Monday, January 2, 2006" }} →</a></p>
 			<div class="entry">
 				<p>{{ if .Title }}<b>{{ .Title }}:</b> {{ end }}{{ .Summary | safeHTML | truncate 350  }}</p>
