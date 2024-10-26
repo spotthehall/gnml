@@ -3,8 +3,8 @@
 	<article>
 		<h2 class="page-title">{{ .Title }}</h2>
 		{{- range (.Site.RegularPages.GroupByDate "January, 2006") }}
-			{{- $headerid := .Date.Format "2006-01" }}
-			<h3 class="archive-range" id="{{ $headerid }}">{{ .Key }}</h3>
+			{{- $id := time.Format "2023-10"}}
+			<h3 class="archive-range" id="{{ $id }}">{{ .Key }}</h3>
 			{{- range (where .Pages "Type" "post")}}
 			<p class="post-date"><a href="{{ .Permalink }}">{{ .Date.Format "Monday, January 2, 2006" }} →</a></p>
 			<div class="entry">
