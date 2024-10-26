@@ -1,10 +1,4 @@
 <style>
-    :root {
-        --link: {{ .Site.Params.wane_lite_link_color }};
-    }
-    @media (prefers-color-scheme: dark) {
-        :root {
-            --link: {{ .Site.Params.wane_dark_link_color }};
-        }
-    }
+    :root {--link: {{ .Site.Params.wane_lite_link_color }};}
+    @media (prefers-color-scheme: dark) {:root {--link: {{ .Site.Params.wane_dark_link_color }};}}
 </style>
