@@ -2,7 +2,7 @@
 <main class="archive">
 	<article>
 		<h2 class="page-title">{{ .Title }}</h2>
-		{{- range (.Site.RegularPages.GroupByDate "January, 2006") }}
+		{{- range (.Site.Pages.GroupByDate "January, 2006") }}
 			{{- $id := replace .Key ", " "-" }}
 			<h3 class="archive-range" id="{{ $id }}">{{ .Key }}</h3>
 			{{- range (where .Pages "Type" "post")}}
