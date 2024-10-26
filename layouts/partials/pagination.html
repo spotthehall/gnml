@@ -1,4 +1,4 @@
-{{ $pag := $.Paginator }}
+{{- $pag := $.Paginator }}
 <nav class="main-nav">
     <ul>
         <li>{{ if $pag.HasPrev }}<a href="{{ $pag.Prev.URL }}">← Newer</a>{{ end }}</li>

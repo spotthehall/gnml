@@ -1,9 +1,9 @@
 {{ define "main" }}
   <main>
     <article>
-      {{ if .Title }}
+      {{- if .Title }}
       <h2 class="page-title">{{ .Title }}</h2>
-      {{ end }}
+      {{- end }}
       {{ .Content }}
     </article>
   </main>

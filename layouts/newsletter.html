@@ -1,6 +1,6 @@
 <style>
 	a {
-		color: #00a1e0;
+		color: #0d88d8;
 		text-decoration: none;
 	}
 	a:hover,
@@ -35,50 +35,38 @@
 </style>
 
 <div class="body">
-	
 	<h2>{{ .Site.Title }}</h2>
-
-	{{ if gt (len .Intro) 0 }}
+	{{- if gt (len .Intro) 0 }}
 	<div class="intro">
 		{{ .Intro }}
 	</div>
-	{{ end }}
+	{{- end }}
 
-	{{ range .Pages }}
+	{{- range .Pages }}
 	<div class="post">
 		<a href="{{ .Permalink }}" class="microblog_permalink">{{ .Date.Format "Jan 2, 2006" }} ↓</a>
-
-		{{ if .Title }}
+		{{- if .Title }}
 		<h3>{{ .Title }}</h3>
-		{{ end }}
+		{{- end }}
 		{{ .Content }}
-
-		{{ if gt (len .Params.audio) 0 }}
+		{{- if gt (len .Params.audio) 0 }}
 		<a href="{ .Permalink }">Audio</a>
-		{{ end }}
-
-		{{ if gt (len .Params.video) 0 }}
+		{{- end }}
+		{{- if gt (len .Params.video) 0 }}
 		<a href="{ .Permalink }">Video</a>
-		{{ end }}
+		{{- end }}
 	</div>
-	{{ end }}
-
+	{{- end }}
 	<div class="footer">
-
 		<a href="{{ .Footer.UnsubscribeURL }}">Unsubscribe</a> | 
-
-		{{ if eq (len .Pages) 1 }}
-		{{ with index .Pages 0 }}
+		{{- if eq (len .Pages) 1 }}
+		{{- with index .Pages 0 }}
 		<a href="{{ .Permalink }}">View in browser</a> | 
-		{{ end }}
-		{{ end }}
-
+		{{- end }}
+		{{- end }}
 		<a href="{{ .Site.BaseURL }}">{{ .Site.Hostname }}</a>
-
-		{{ if gt (len .Footer.MailingAddress) 0 }}
+		{{- if gt (len .Footer.MailingAddress) 0 }}
 		 | {{ .Footer.MailingAddress }}
-		{{ end }}
-
+		{{- end }}
 	</div>
-
 </div>
