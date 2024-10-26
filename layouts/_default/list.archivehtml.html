@@ -5,9 +5,8 @@
 
 		{{ $posts := where  .Site.RegularPages "Type" "post" }}
 		{{ $grouped := $posts.GroupByDate "January 2006" }}
-		{{ $paginated := (.Paginate ($grouped)) }}
 		
-		{{ range $paginated.PageGroups }}
+		{{ range $grouped }}
 			<h3 class="archive-range">{{ .Key }}</h3>
 			{{- range .Pages.Reverse }}
 			<p class="post-date"><a href="{{ .Permalink }}">{{ .Date.Format "Monday, January 2, 2006" }} →</a></p>
