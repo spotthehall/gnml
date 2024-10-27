@@ -510,7 +510,8 @@ article ol li {
 
 .microblog_reply_form {
   border: 1px solid var(--accent-2);
-  padding: 1rem;
+  background: var(--accent-1);
+  padding: 1rem 2rem;
   border-radius: 3px;
 }
 
@@ -520,7 +521,7 @@ article ol li {
 
 .microblog_reply_textarea textarea {
   border: 1px solid var(--accent-2);
-  background: var(--accent-1);
+  background: var(--background);
   color: var(--text);
   width: 100%;
   border-radius: 3px;
