@@ -209,7 +209,7 @@ pre {
   overflow-wrap: normal;
   overflow-x: scroll;
   padding: 2rem;
-  white-space: pre-line;
+  white-space: pre;
   word-wrap: normal;
 }
 
