@@ -227,6 +227,10 @@ pre code {
   padding: 0;
 }
 
+div.highlight pre {
+  background-color: #000 !important;
+}
+
 input[type=button],
 input[type=submit] {
   background-color: var(--accent-2);
