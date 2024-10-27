@@ -4,4 +4,4 @@
 
 A minimal Micro.blog theme.
 
-See it in action at [mnml.jimmitchell.org](https://mnml.jimmitchell.org).
+See it in action at [jimmitchell.org](https://jimmitchell.org).
