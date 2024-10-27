@@ -214,7 +214,7 @@ pre {
 }
 
 code {
-  background: var(--accent-1);
+  background: var(--text);
   border-radius: 18px;
   color: var(--background);
   padding: 3px;
