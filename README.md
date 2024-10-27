@@ -1,8 +1,7 @@
 # mnml
 
-A minimalist Micro.blog theme.
+![mnml](icon.jpg)
 
-### Theme features
+A minimal Micro.blog theme.
 
-- The ability to set custom light and dark mode link colors.
-- The ability to add your Fediverse Creator (Mastodon) name.
+See it in action at [mnml.jimmitchell.org](https://mnml.jimmitchell.org).

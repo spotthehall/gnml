@@ -11,8 +11,6 @@
         {{- range .Site.Params.plugins_js -}}
         <script defer type="text/javascript" src="{{ . }}"></script>
         {{- end -}}
-        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
         <script defer type="text/javascript" src="{{ "js/menu.js" | relURL }}"></script>
-        <script defer type="text/javascript" src="{{ "js/prism.js" | relURL }}"></script>
     </body>
 </html>

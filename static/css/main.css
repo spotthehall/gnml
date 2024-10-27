@@ -201,9 +201,9 @@ tt {
 }
 
 pre {
-  background: var(--text);
+  background: #101115;
   border-radius: 3px;
-  color: var(--background);
+  color: #f8f8f8;
   line-height: 1.5;
   margin: 2rem 0;
   overflow-wrap: normal;
@@ -214,7 +214,7 @@ pre {
 }
 
 code {
-  background: var(--text);
+  background: var(--accent-1);
   border-radius: 18px;
   color: var(--background);
   padding: 3px;

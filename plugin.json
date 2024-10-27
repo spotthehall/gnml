@@ -1,23 +1,5 @@
 {
 	"version": "1.0.0",
 	"title": "mnml",
-	"description": "A minimal Micro.blog theme.",
-	"fields": [
-		{
-			"field": "params.mnml_lite_link_color",
-			"label": "Light mode link color",
-			"type": "color"
-		},
-		{
-			"field": "params.mnml_dark_link_color",
-			"label": "Dark mode link color",
-			"type": "color"
-		},
-		{
-			"field": "params.mnml_fediverse_creator",
-			"label": "Fediverse creator",
-			"type": "text",
-			"placeholder": "Enter your Mastodon username."
-		}
-	]
+	"description": "A minimal Micro.blog theme."
 }
