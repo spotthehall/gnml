@@ -3,14 +3,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
   <meta name="view-transition" content="same-origin" />
-  <title>
-    {{- block "title" . -}}
-    {{- .Site.Title -}}
-    {{- if and .Title (ne .Title .Site.Title) }}
-    | {{ .Title }}
-    {{- end -}}
-    {{- end -}}
-  </title>
+  <title>{{- block "title" . -}}{{- .Site.Title -}}{{- if and .Title (ne .Title .Site.Title) }} | {{ .Title }}{{- end -}}{{- end -}}</title>
   <meta name="description" content="{{ (or .Summary .Site.Params.itunes_description) | truncate 160 }}">
   <link rel="shortcut icon" href="https://micro.blog/{{ .Site.Author.username }}/favicon.png" type="image/x-icon" />
   <link rel="preload" href="/fonts/GT-W-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous"/>
