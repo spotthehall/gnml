@@ -163,6 +163,16 @@ b, strong {
   font-weight: var(--font-weight-bold);
 }
 
+sub {
+  vertical-align: sub;
+  font-size: smaller;
+}
+
+sup {
+  vertical-align: super;
+  font-size: smaller;
+}
+
 hr {
   border: none;
   height: 1px;
