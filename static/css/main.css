@@ -782,4 +782,8 @@ a.tinylytics_webring {
     -webkit-transform: translateY(-5px) rotate(-45deg);
     transform: translateY(-5px) rotate(-45deg);
   }
+  
+  .to-top:hover {
+    background: var(--accent-2);
+  }
 }
