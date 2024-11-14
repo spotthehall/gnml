@@ -624,14 +624,14 @@ footer p {
   right: 2.5rem;
   border: none;
   box-shadow: none;
-  background: var(--accent-3);
+  background: var(--accent-1);
   padding: 0 1rem;
   cursor: pointer;
   opacity: 80%;
 }
 
 .to-top:hover {
-  background: var(--accent-3);
+  background: var(--accent-1);
   opacity: 100%;
 }
 
@@ -780,8 +780,5 @@ a.tinylytics_webring {
     -webkit-transform: translateY(-5px) rotate(-45deg);
     transform: translateY(-5px) rotate(-45deg);
   }
-  
-  .to-top:hover {
-    background: var(--accent-2);
-  }
+
 }
