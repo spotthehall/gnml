@@ -629,8 +629,7 @@ footer p {
   cursor: pointer;
 }
 
-.to-top:hover,
-.to-top:active {
+.to-top:hover {
   background: var(--accent-3);
 }
 
