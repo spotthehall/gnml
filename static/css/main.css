@@ -625,6 +625,7 @@ footer p {
   border: none;
   box-shadow: none;
   background: var(--accent-2);
+  padding: 0 1rem;
 }
 
 .to-top svg {
