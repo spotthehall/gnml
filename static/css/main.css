@@ -81,6 +81,7 @@ td {
 
 html {
   font-size: 10px;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -613,6 +614,25 @@ footer p {
   margin: 0;
 }
 
+.to-top {
+  border-radius: 50%;
+  height: 1.5rem;
+  width: 1.5rem;
+  vertical-align: middle;
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  background: var(--accent-2);
+}
+
+.to-top svg {
+  fill: #fff;
+}
+
+.social {
+  margin: 1.5rem 0;
+}
+
 .social a {
   margin: 0 5px;
   font-size: 1.8rem;
@@ -688,6 +708,10 @@ a.tinylytics_webring {
   
   .header {
     margin: 0;
+  }
+  
+  .site-title {
+    font-size:1.8rem;
   }
 
   .site-nav {
