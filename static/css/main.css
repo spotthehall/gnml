@@ -626,6 +626,12 @@ footer p {
   box-shadow: none;
   background: var(--accent-2);
   padding: 0 1rem;
+  cursor: pointer;
+}
+
+.to-top:hover,
+.to-top:active {
+  background: var(--accent-1);
 }
 
 .to-top svg {
