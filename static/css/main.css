@@ -631,7 +631,7 @@ footer p {
 
 .to-top:hover,
 .to-top:active {
-  background: var(--accent-1);
+  background: var(--accent-3);
 }
 
 .to-top svg {
