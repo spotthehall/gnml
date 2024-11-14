@@ -616,12 +616,14 @@ footer p {
 
 .to-top {
   border-radius: 50%;
-  height: 1.5rem;
-  width: 1.5rem;
+  height: 4rem;
+  width: 4rem;
   vertical-align: middle;
-  position: absolute;
-  bottom: 1rem;
-  right: 1rem;
+  position: fixed;
+  bottom: 2.5rem;
+  right: 2.5rem;
+  border: none;
+  box-shadow: none;
   background: var(--accent-2);
 }
 
