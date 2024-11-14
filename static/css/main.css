@@ -627,7 +627,7 @@ footer p {
   background: var(--text);
   padding: 0 1rem;
   cursor: pointer;
-  opacity: 60%;
+  opacity: 50%;
 }
 
 .to-top:hover {
