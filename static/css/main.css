@@ -624,13 +624,15 @@ footer p {
   right: 2.5rem;
   border: none;
   box-shadow: none;
-  background: var(--accent-2);
+  background: var(--accent-3);
   padding: 0 1rem;
   cursor: pointer;
+  opacity: 80%;
 }
 
 .to-top:hover {
   background: var(--accent-3);
+  opacity: 100%;
 }
 
 .to-top svg {
