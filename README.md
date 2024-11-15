@@ -1,6 +1,6 @@
 # mnml
 
-![mnml](icon.jpg)
+![mnml](https://raw.githubusercontent.com/jimmitchell/mnml/main/icon.jpg)
 
 A minimal, simple and clean Micro.blog theme.
 
