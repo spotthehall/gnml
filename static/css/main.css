@@ -628,6 +628,7 @@ footer p {
   padding: 0 1rem;
   cursor: pointer;
   opacity: 50%;
+  transition: all 0.2s ease;
 }
 
 .to-top:hover {
