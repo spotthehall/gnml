@@ -18,7 +18,7 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #282c35;
-    --text: #f8f8f8;
+    --text: #f7f7f7;
     --link: #45c8f7;
     --link-hover: #ffffff;
     --accent-1: #3d4149;
@@ -515,7 +515,7 @@ article ol li {
 
 .microblog_time a,
 .microblog_time a:visited {
-  color: var(--accent-2);
+  color: var(--accent-3);
   font-size: 1.6rem;
   text-decoration: none;
 }
