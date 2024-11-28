@@ -19,16 +19,13 @@
         {{- end }}
         </p>
         {{- end }}
-
         {{- if and (templates.Exists "partials/tinylytics.html") (.Site.Params.show_kudos) (ne (.Site.Params.site_id | default "") "") }}
         <p><button id="al" aria-label="Kudo Button" class="tinylytics_kudos" data-path="{{ .Page.RelPermalink }}"></button></p>
         {{- end }}
     </article>
-    
     {{- if .Site.Params.include_conversation }}
         <script type="text/javascript" src="https://micro.blog/conversation.js?url={{ .Permalink }}"></script>
     {{- end }}
-    
     {{- if or (.NextInSection) (.PrevInSection) }}
     <nav class="main-nav">
         <ul>

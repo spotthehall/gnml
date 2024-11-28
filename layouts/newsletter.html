@@ -21,7 +21,7 @@
 		max-width: 700px;
 	}
 	.intro {
-		border-bottom: 1px solid #93959a;
+		border-bottom: 1px solid #d4d4d6;
 		padding-bottom: 20px;
 	}
 	.post {
@@ -29,12 +29,11 @@
 		margin-bottom: 10px;
 	}
 	.footer {
-		border-top: 1px solid #93959a;
+		border-top: 1px solid #d4d4d6;
 		padding-top: 5px;
 		margin-top: 5px;
 	}
 </style>
-
 <div class="body">
 	<h2>{{ .Site.Title }}</h2>
 	{{- if gt (len .Intro) 0 }}
@@ -45,7 +44,7 @@
 
 	{{- range .Pages }}
 	<div class="post">
-		<a href="{{ .Permalink }}" class="microblog_permalink">{{ .Date.Format "Jan 2, 2006" }} ↓</a>
+		<a href="{{ .Permalink }}" class="microblog_permalink">{{ .Date.Format "Monday, January 2, 2006" }} ↓</a>
 		{{- if .Title }}
 		<h3>{{ .Title }}</h3>
 		{{- end }}
