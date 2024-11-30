@@ -481,11 +481,11 @@ article ol li {
   margin-bottom: 1rem;
   padding: 2.3rem 2rem;
   border: 1px solid var(--accent-2);
-  border-radius: 3px;
+  border-radius: 12px;
 }
 
 .microblog_conversation .microblog_post {
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 .microblog_user {
@@ -527,7 +527,7 @@ article ol li {
   border: 1px solid var(--accent-2);
   background: var(--accent-1);
   padding: 1rem 2rem;
-  border-radius: 3px;
+  border-radius: 12px;
 }
 
 .microblog_reply_signin {
