@@ -17,7 +17,10 @@
         <p class="post-date btm-margin"><a href="{{ .Permalink }}">{{ .Date.Format "Monday, January 2, 2006" }} →</a></p>
         {{- end }}
         {{- if .Title }}
-            {{ .Summary | safeHTML | truncate 300  }}
+            {{ .Summary | safeHTML }}
+            {{- if .Truncated }}
+            <p><a href="{{ .RelPermalink }}">Continue reading →</a></p>
+            {{- end }}
         {{- else }}
             {{ .Content }}
         {{- end }}
