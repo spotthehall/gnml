@@ -19,7 +19,7 @@
         {{- if .Title }}
             {{ .Summary | safeHTML }}
             {{- if .Truncated }}
-            <p><a href="{{ .RelPermalink }}">Continue reading →</a></p>
+            <p><a href="{{ .Permalink }}">Continue reading →</a></p>
             {{- end }}
         {{- else }}
             {{ .Content }}
