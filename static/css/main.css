@@ -24,7 +24,7 @@
     --accent-1: #3d4149;
     --accent-2: #53565d;
     --accent-3: #d4d4d6;
-    --highlight: #555539;
+    --highlight: #5c5c3f;
   }
 }
 
@@ -257,8 +257,10 @@ div.highlight pre {
   background-color: #000 !important;
 }
 
-highlight {
-	background-color: var(--highlight);
+highlight,
+mark {
+  background-color: var(--highlight);
+  color: var(--text);
 }
 
 input[type=button],
