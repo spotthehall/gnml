@@ -440,7 +440,8 @@ single article {
   font-size: 1.6rem;
 }
 
-article img {
+article img,
+article video {
   max-width: 100%;
   height: auto;
   margin: 3rem auto;
