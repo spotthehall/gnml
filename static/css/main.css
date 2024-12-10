@@ -6,7 +6,7 @@
   --accent-1: #f6f6f6;
   --accent-2: #d4d4d6;
   --accent-3: #93959a;
-  --highlight: #fcfcb7;
+  --highlight: #d4d4d6;
   --sans-serif-font: 'GTW', -apple-system, system-ui, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif;
   --mono-space-font: ui-monospace, SFMono-Regular, ui-monospace, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
   --font-weight-normal: 400;
@@ -24,7 +24,7 @@
     --accent-1: #3d4149;
     --accent-2: #53565d;
     --accent-3: #d4d4d6;
-    --highlight: #5c5c3f;
+    --highlight: #53565d;
   }
 }
 
@@ -241,7 +241,7 @@ pre {
 
 code {
   background: var(--text);
-  border-radius: 18px;
+  border-radius: 1rem;
   color: var(--background);
   padding: 3px;
 }
@@ -261,6 +261,8 @@ highlight,
 mark {
   background-color: var(--highlight);
   color: var(--text);
+  padding: 0 3px;
+  margin-left: -3px;
 }
 
 input[type=button],
@@ -323,7 +325,7 @@ main {
 }
 
 .u-photo {
-  border-radius: 50%;
+  border-radius: 1rem;
   display: inline;
   margin-right: 8px;
   margin-top: -3px;
@@ -482,7 +484,7 @@ article ol li {
   margin-bottom: 1rem;
   padding: 2.3rem 2rem;
   border: 1px solid var(--accent-2);
-  border-radius: 12px;
+  border-radius: 1rem;
 }
 
 .microblog_conversation .microblog_post {
@@ -505,7 +507,7 @@ article ol li {
   vertical-align: middle;
   width: 30px;
   height: auto;
-  border-radius: 50%;
+  border-radius: 1rem;
   max-width: 30px !important;
   display: inline-block;
   margin-top: -2px;
@@ -528,7 +530,7 @@ article ol li {
   border: 1px solid var(--accent-2);
   background: var(--accent-1);
   padding: 1rem 2rem;
-  border-radius: 12px;
+  border-radius: 1rem;
 }
 
 .microblog_reply_signin {
@@ -579,7 +581,7 @@ input.subscribe-submit {
   background-color: var(--accent-1);
   color: var(--text);
   padding: 2rem 3rem;
-  border-radius: 1.2rem;
+  border-radius: 1rem;
   text-align: center;
 }
 
@@ -632,7 +634,7 @@ footer p {
 }
 
 .to-top {
-  border-radius: 50%;
+  border-radius: 1rem;
   height: 3.6rem;
   width: 3.6rem;
   vertical-align: middle;
@@ -677,7 +679,7 @@ footer p {
   border: 1px solid var(--accent-2);
   background-color: var(--accent-1);
   font-size: 1.4rem;
-  border-radius: 20px;
+  border-radius: 1rem;
   padding: 2px 10px;
   display: inline-block;
   margin: 2px 0;
@@ -715,7 +717,7 @@ a.tinylytics_webring {
 }
 
 .tinylytics_webring_avatar {
-  border-radius: 50%;
+  border-radius: 1rem;
   width: 24px;
   height: auto;
   vertical-align: middle;
