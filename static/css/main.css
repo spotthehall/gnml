@@ -637,7 +637,7 @@ footer p {
 }
 
 .to-top {
-  border-radius: 1rem;
+  border-radius: .6rem;
   height: 3.6rem;
   width: 3.6rem;
   vertical-align: middle;
