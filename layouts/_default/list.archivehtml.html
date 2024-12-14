@@ -7,7 +7,7 @@
 		<div class="archive-categories">
 			<h3 class="archive-range">Categories</h3>
 			<div class="category-list">
-				{{ range $list.Alphabetical }}
+				{{ range $list }}
 				<a href="{{ .Permalink }}">{{ .Title }}</a>
 				{{ end }}
 			</div>
