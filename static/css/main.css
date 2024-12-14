@@ -201,6 +201,7 @@ table {
 
 th {
   font-weight: var(--font-weight-bold);
+  background: var(--accent-1);
 }
 
 td {
@@ -212,10 +213,6 @@ td {
   padding: 6px;
   border: 1px solid var(--accent-2);
   text-align: left;
-}
-
-th {
-  background: var(--accent-1);
 }
 
 code,
