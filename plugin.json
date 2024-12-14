@@ -4,6 +4,11 @@
 	"description": "A minimal, simple and clean Micro.blog theme.",
 	"fields": [
 		{
+		  "field": "params.custom_avatar",
+		  "label": "Use a custom avatar.",
+		  "type": "text",
+		  "placeholder": "Enter a complete image URL."
+		},{
 		  "field": "params.show_categories",
 		  "label": "Show Categories on Archive page.",
 		  "type": "boolean"
