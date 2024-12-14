@@ -5,7 +5,6 @@
 		{{- $list := ($.Site.GetPage "taxonomyTerm" "categories").Pages }}
 		{{- if and (.Site.Params.show_categories) (gt (len $list) 0) }}
 		<div class="archive-categories">
-			<h3 class="archive-range">Categories</h3>
 			<div class="category-list">
 				{{ range $list }}
 				<a href="{{ .Permalink }}"><button>{{ .Title }}</button></a>
