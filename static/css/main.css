@@ -751,6 +751,23 @@ a.tinylytics_webring {
   background: var(--background);
 }
 
+.microblog_collection {
+    justify-content: center;
+    align-items: center;
+    line-height: 0;
+    margin: 0 !important;
+}
+.microblog_collection img {
+    display: inline !important;
+    width: 194px !important;
+    height: 194px !important;
+    object-fit: cover;
+    border-radius: 1rem !important;
+    padding: 0;
+    margin: 2px !important;
+    cursor: pointer;
+}
+
 @media only screen and (max-width: 768px) {
   body {
     overscroll-behavior: contain;
