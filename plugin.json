@@ -5,17 +5,17 @@
 	"fields": [
 		{
 		  "field": "params.custom_avatar",
-		  "label": "Use a custom avatar.",
+		  "label": "Custom avatar",
 		  "type": "text",
-		  "placeholder": "Enter a complete image URL."
+		  "placeholder": "Enter a complete URL to a jpeg or png image"
 		},{
 		  "field": "params.show_categories",
-		  "label": "Show Categories on Archive page.",
+		  "label": "Show Categories on Archive page",
 		  "type": "boolean"
 		},
 		{
 		  "field": "params.hide_credit",
-		  "label": "Hide footer credits.",
+		  "label": "Hide footer credits",
 		  "type": "boolean"
 		}
 	]
