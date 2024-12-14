@@ -634,8 +634,8 @@ footer p {
   margin: 0;
 }
 
-.hide {
-  display: none;
+.credits {
+  margin: 3rem 0;
 }
 
 .to-top {
