@@ -8,7 +8,7 @@
 			<h3 class="archive-range">Categories</h3>
 			<div class="category-list">
 				{{ range $list }}
-				<a href="{{ .Permalink }}">{{ .Title }}</a>
+				<a href="{{ .Permalink }}"><button>{{ .Title }}</button></a>
 				{{ end }}
 			</div>
 		</div>
