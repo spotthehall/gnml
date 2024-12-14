@@ -48,7 +48,10 @@
 		{{- if .Title }}
 		<h3>{{ .Title }}</h3>
 		{{- end }}
-		{{ .Content }}
+		{{ .Summary | safeHTML }}
+		{{- if .Truncated }}
+		<p><a href="{{ .Permalink }}">Continue reading →</a></p>
+		{{- end }}
 		{{- if gt (len .Params.audio) 0 }}
 		<a href="{ .Permalink }">Audio</a>
 		{{- end }}

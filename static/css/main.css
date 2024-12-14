@@ -644,8 +644,8 @@ footer p {
   width: 3.6rem;
   vertical-align: middle;
   position: fixed;
-  bottom: 1.5rem;
-  right: 1.5rem;
+  bottom: 1.75rem;
+  right: 1.75rem;
   border: none;
   box-shadow: none;
   background: var(--link);
