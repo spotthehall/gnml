@@ -755,17 +755,18 @@ a.tinylytics_webring {
     justify-content: center;
     align-items: center;
     line-height: 0;
-    margin: 0 !important;
+    margin: 0px -3px !important;
 }
 .microblog_collection img {
     display: inline !important;
-    width: 194px !important;
-    height: 194px !important;
+    width: 25% !important;
+    height: 150px !important;
     object-fit: cover;
     border-radius: 1rem !important;
     padding: 0;
-    margin: 3px !important;
+    margin: 0 !important;
     cursor: pointer;
+    border: 3px solid transparent;
 }
 
 @media only screen and (max-width: 768px) {
@@ -841,6 +842,12 @@ a.tinylytics_webring {
   .hamburger.active .bar:nth-child(3) {
     -webkit-transform: translateY(-5px) rotate(-45deg);
     transform: translateY(-5px) rotate(-45deg);
+  }
+  
+  .microblog_collection img {
+      width: 50% !important;
+      height: 100px !important;
+      border: 3px solid transparent;
   }
   
   .to-top {
