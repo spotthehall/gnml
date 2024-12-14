@@ -1,5 +1,5 @@
 {
-	"version": "1.1.7",
+	"version": "2.0.0",
 	"title": "mnml",
 	"description": "A minimal, simple and clean Micro.blog theme.",
 	"fields": [
@@ -7,7 +7,7 @@
 		  "field": "params.custom_avatar",
 		  "label": "Custom avatar",
 		  "type": "text",
-		  "placeholder": "Enter a complete URL to a jpeg or png image"
+		  "placeholder": "Enter a full URL to a jpg, png or svg image"
 		},{
 		  "field": "params.show_categories",
 		  "label": "Show Categories on Archive page",
