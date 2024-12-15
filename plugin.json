@@ -8,6 +8,12 @@
 		  "label": "Custom avatar",
 		  "type": "text",
 		  "placeholder": "Enter a full URL to an image"
+		},
+		{
+		  "field": "params.fediverse_creator",
+		  "label": "Fediverse creator",
+		  "type": "text",
+		  "placeholder": "Enter your Mastodon handle: '@user@mastodon.social'"
 		},{
 		  "field": "params.show_categories",
 		  "label": "Show Categories on Archives",
