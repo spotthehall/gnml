@@ -757,6 +757,7 @@ a.tinylytics_webring {
     line-height: 0;
     margin: 0px -3px !important;
 }
+
 .microblog_collection img {
     display: inline !important;
     width: 25% !important;
@@ -767,6 +768,13 @@ a.tinylytics_webring {
     margin: 0 !important;
     cursor: pointer;
     border: 3px solid transparent;
+}
+
+.microblog_collection img:hover {
+    -moz-filter: brightness(70%);
+    -webkit-filter: brightness(70%);
+    filter: brightness(70%);
+    transition: ease-in-out 0.25s;
 }
 
 @media only screen and (max-width: 768px) {
