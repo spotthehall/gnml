@@ -3,7 +3,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
   <meta name="view-transition" content="same-origin" />
-  {{- if ne .Site.Params.fediverse_creator }}<meta name="fediverse:creator" content="{{ .Site.Params.fediverse_creator }}">{{- end }}
+  {{- $creator := .Site.Params.custom_avatar }}
+  {{- if $creator }}
+  <meta name="fediverse:creator" content="{{ $creator }}">
+  {{- end }}
   <title>{{- block "title" . -}}{{- .Site.Title -}}{{- if and .Title (ne .Title .Site.Title) }} | {{ .Title }}{{- end -}}{{- end -}}</title>
   <meta name="description" content="{{ (or .Summary .Site.Params.itunes_description) | truncate 160 }}">
   <link rel="shortcut icon" href="https://micro.blog/{{ .Site.Author.username }}/favicon.png" type="image/x-icon" />
