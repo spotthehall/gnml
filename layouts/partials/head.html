@@ -3,7 +3,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
   <meta name="view-transition" content="same-origin" />
-  {{- $creator := .Site.Params.custom_avatar }}
+  {{- $creator := .Site.Params.fediverse_creator }}
   {{- if $creator }}
   <meta name="fediverse:creator" content="{{ $creator }}">
   {{- end }}
