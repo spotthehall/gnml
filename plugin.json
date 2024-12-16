@@ -1,5 +1,5 @@
 {
-	"version": "2.0.5",
+	"version": "2.0.6",
 	"title": "mnml",
 	"description": "A minimal, simple and clean Micro.blog theme.",
 	"fields": [
@@ -13,7 +13,7 @@
 		  "field": "params.fediverse_creator",
 		  "label": "Fediverse creator",
 		  "type": "text",
-		  "placeholder": "Enter your Mastodon handle: '@user@mastodon.social'"
+		  "placeholder": "@username@mastodon.instance"
 		},{
 		  "field": "params.show_categories",
 		  "label": "Show Categories on Archives",
