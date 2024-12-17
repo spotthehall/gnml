@@ -8,7 +8,7 @@
   <meta name="fediverse:creator" content="{{ $creator }}" />
   {{- end }}
   <title>{{- block "title" . -}}{{- .Site.Title -}}{{- if and .Title (ne .Title .Site.Title) }} | {{ .Title }}{{- end -}}{{- end -}}</title>
-  <meta name="description" content="{{ (or .Summary .Site.Params.itunes_description) | truncate 160 }}">
+  <meta name="description" content="{{ (or .Summary .Site.Params.itunes_description) }}">
   <link rel="canonical" href="{{ .Permalink }}">
   <link rel="author" href="humans.txt" />
   <link rel="preload" href="/fonts/GT-W-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous"/>
