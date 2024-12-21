@@ -550,6 +550,18 @@ article ol li {
   text-decoration: none;
 }
 
+.reply-buttons {
+  list-style-type: none;
+  padding: 0;
+  margin: 0 0 4rem 0;
+}
+.reply-buttons li {
+  display: inline;
+  margin-right: 0;
+  line-height: 1.6rem;
+  white-space: nowrap;
+}
+
 .microblog_reply_form {
   border: 1px solid var(--accent-2);
   background: var(--accent-1);
@@ -699,7 +711,11 @@ footer p {
   color: var(--link-hover);
 }
 
-.tinylytics_kudos {
+.tinylytics_kudos,
+.tiny_hits,
+a.conversation-on-mb,
+a.reply-on-mastodon,
+a.reply-by-email {
   text-decoration: none;
   color: var(--accent-3);
   border: 1px solid var(--accent-2);
@@ -713,6 +729,13 @@ footer p {
 }
 
 .tinylytics_kudos:hover,
+a.conversation-on-mb:hover,
+a.reply-on-mastodon:hover,
+.tinylytics_kudos:active,
+a.reply-by-email:hover,
+a.reply-by-email:active,
+a.conversation-on-mb:active,
+a.reply-on-mastodon:active,
 .did_select {
   border: 1px solid var(--text);
   background: var(--text);
