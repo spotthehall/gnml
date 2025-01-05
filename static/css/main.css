@@ -491,8 +491,8 @@ article ol li {
 
 .category-list button:hover,
 .category-list button:active {
-  border: 1px solid var(--text);
-  background: var(--text);
+  border: 1px solid var(--link);
+  background: var(--link);
   color: var(--background);
 }
 
