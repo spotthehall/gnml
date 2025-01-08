@@ -496,6 +496,20 @@ article ol li {
   color: var(--background);
 }
 
+.microblog_narration_button {
+  display: inline-block;
+  background: var(--accent-1);
+  border: 1px solid var(--accent-2);
+  border-radius: .6rem;
+  padding: 0px 10px 3px 6px;
+}
+
+.microblog_narration_button:hover,
+.microblog_narration_button:active {
+  background: var(--link);
+  border-color: var(--link);
+}
+
 .microblog_narration_button svg {
   display: inline;
 }
