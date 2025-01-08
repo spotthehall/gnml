@@ -506,8 +506,8 @@ article ol li {
 
 .microblog_narration_button:hover,
 .microblog_narration_button:active {
-  background: var(--link);
-  border-color: var(--link);
+  background: var(--accent-2);
+  border-color: var(--accent-3);
 }
 
 .microblog_narration_button svg {
