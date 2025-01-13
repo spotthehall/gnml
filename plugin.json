@@ -1,7 +1,7 @@
 {
 	"version": "2.1.6",
-	"title": "mnml",
-	"description": "A minimal, simple and clean Micro.blog theme.",
+	"title": "gnml",
+	"description": "A minimal, simple and clean Micro.blog theme with geotagging using the Title field.",
 	"fields": [
 		{
 		  "field": "params.custom_avatar",
