@@ -2,7 +2,8 @@
 
 ![gnml](https://github.com/spotthehall/gnml/blob/main/icon.jpg)
 
-A minimal, simple and clean Micro.blog theme with geotagging using the _Title_ field.
+A minimal, simple and clean Micro.blog theme with geotagging using the _Title_ field as the entry for coordinates.
+WARNING: if the _Title_ field is used as originally intended - it will break the map.
 
 See it in action at [davidhall.net](https://davidhall.net).
 
