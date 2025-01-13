@@ -9,5 +9,60 @@
         {{- range .Site.Params.plugins_js -}}
         <script defer type="text/javascript" src="{{ . }}"></script>
         {{- end -}}
+        <script>
+
+const osm = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 19,
+        attribution: '© <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+    });
+    const mbAttr = 'Map data © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>';
+    const mbUrl = 'https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1Ijoic3BvdHRoZWhhbGwiLCJhIjoiY2pkbjEyZzh6MDk1bzJxcXpjN2x6MzhjdyJ9.atFpH4ix9jeTIRtEFyOmyg';
+    const satellite = L.tileLayer(mbUrl, {id: 'mapbox/satellite-v9', tileSize: 512, zoomOffset: -1, attribution: mbAttr});
+
+if (location.search.substring(1)) {
+    var qs = location.search.substring(1);
+    var url = qs.split(',',3);
+    var lat = parseFloat(url[0]);
+    var lng = parseFloat(url[1]);
+    var zmn = parseFloat(url[2]);
+    vars = url.vars
+}
+else {
+    var lat = 25.77516;
+    var lng = 64.86328;
+    var zmn = 2;
+}
+const map = new L.Map('map', {
+        center: new L.LatLng(lat, lng),
+        zoom: zmn,
+        layers: [osm]
+});
+const baseLayers = {
+        'OpenStreetMap': osm,
+        'Satellite': satellite
+};
+const layerControl = L.control.layers(baseLayers).addTo(map);
+
+L.control.scale().addTo(map);
+
+var leafIcon = L.icon({
+    iconUrl: '/marker.svg',
+    iconAnchor: [7, 16],
+	popupAnchor: [1, -17]
+});
+
+{{ $list := (where .Site.Pages "Type" "post")}}{{ range $list }}{{ if.Title }}
+var marker = new L.Marker([{{ .Title | safeJS }}], {icon: leafIcon}).addTo(map).bindPopup("<a href='{{ .Permalink }}'>{{ .Date.Format "2006-01-02" }}</a>");
+{{ end }} {{ end }}
+
+function onMapClick(e) {
+		var latlngStr = '(' + e.latlng.lat.toFixed(3) + ', ' + e.latlng.lng.toFixed(3) + ')';
+		document.getElementById('message').innerHTML = e.latlng;
+		displayMessage(latlngStr);
+}
+map.on('click', onMapClick);
+
+
+</script>
     </body>
 </html>
