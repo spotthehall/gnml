@@ -8,7 +8,7 @@
 		text-decoration: underline;
 	}
 	img {
-		border-radius: 3px;
+		border-radius: 6px;
 		width: 100%;
 		height: auto;
 		max-width: 700px;
@@ -16,9 +16,8 @@
 	.body {
 		font-family: system-ui, sans-serif;
 		font-size: 18px;
-		background: #fff;
-		color: #42444a;
 		max-width: 700px;
+		padding: 20px;
 	}
 	.intro {
 		border-bottom: 1px solid #d4d4d6;
@@ -44,14 +43,12 @@
 
 	{{- range .Pages }}
 	<div class="post">
-		<a href="{{ .Permalink }}" class="microblog_permalink">{{ .Date.Format "Monday, January 2, 2006" }} ↓</a>
+		<a href="{{ .Permalink }}" class="microblog_permalink">{{ .Date.Format "Monday, January 2, 2006" }}</a>
 		{{- if .Title }}
 		<h3>{{ .Title }}</h3>
 		{{- end }}
 		{{ .Summary }}
-		{{- if .Truncated }}
-		<p><a href="{{ .Permalink }}">Read online →</a></p>
-		{{- end }}
+		<p><a href="{{ .Permalink }}">Continue reading online →</a></p>
 		{{- if gt (len .Params.audio) 0 }}
 		<a href="{ .Permalink }">Audio</a>
 		{{- end }}
