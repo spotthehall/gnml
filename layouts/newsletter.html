@@ -48,7 +48,7 @@
 		{{- if .Title }}
 		<h3>{{ .Title }}</h3>
 		{{- end }}
-		{{ .Summary | safeHTML }}
+		{{ .Summary }}
 		{{- if .Truncated }}
 		<p><a href="{{ .Permalink }}">Continue reading →</a></p>
 		{{- end }}
