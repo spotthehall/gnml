@@ -262,6 +262,24 @@ mark {
   margin-left: -3px;
 }
 
+.photos-grid-container a:hover {
+    opacity: 0.5;
+    transition: ease-in-out 0.25s;
+}
+
+.photos-grid-container {
+	display: grid;
+	grid-column-gap: 15px;
+	grid-row-gap: 15px;
+	grid-template-columns: 33% 33% 33%;
+}
+
+.photos-grid-item {
+	border-radius: 5px;
+	max-width: 100%;
+	height: auto;
+}
+
 input[type=button],
 input[type=submit] {
   background-color: var(--accent-2);
