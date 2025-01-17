@@ -180,10 +180,10 @@
 	outline: 0;
 }
 .leaflet-container a {
-	color: #ff6f00;
+	color: #52a603;
 }
 .leaflet-container a.leaflet-active {
-	outline: 2px solid orange;
+	outline: 2px solid green;
 }
 .leaflet-zoom-box {
 	border: 2px dotted #38f;
