@@ -1,2 +1,4 @@
+/* Create a new Page and insert the following */
+
 <div id="map"></div>
 <div id="message">Click = point</div>
